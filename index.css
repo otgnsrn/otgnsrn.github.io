@@ -18,18 +18,21 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: Philosopher;
     flex-wrap: wrap;
+    align-items: center;
+    font-family: Philosopher;
 }
 
 header .logo{
     color: var(--green);
     font-family: Shrikhand;
+    font-size: 16px;
 }
 
 header a{
     color: var(--dark-green);
     font-weight: bold;
+    font-size: 24px;
 }
 
 header ul{
@@ -41,52 +44,59 @@ a{
     text-decoration: none;
 }
 
-img{
-    height: auto;
-    min-width: 100%;
+.background{
+    position: relative;
 }
 .welcome_box{
-    height: 30%;
-    width: 25%; 
-}
+    position: absolute;
+    top: 270px;
+    left: 30px;
+    height: 40%;
+    width: 40%; 
+    line-height: 18px;
 
+}
 .welcome_box h2{
     color: var(--green);
     font-family: Shrikhand;
+    font-size: 42px;
 }
 
 .welcome_box p{
     color: var(--dark-green);
     font-family: Philosopher;
+    font-size: 22px;
 }
 
 .welcome_buttons{
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .welcome_box button{
     background-color: white;
     font-family: Philosopher;
+    font-size: 22px;
     font-style: var(--dark-green);
     border-color: hsl(0, 0%, 75%);
     border-radius: 35px;
-    height: 35px;
-    width: 130px;
+    height: 45px;
+    width: 210px;
     align-items: center;
 }
 
 .welcome_box button:hover{
     background-color: var(--green);
     color: white;
+    border: none;
 }
 
 footer{
+    height: 50px;
     background-color: #069D47;
     font-family: Philosopher;
-    height: 95px;
-    align-items: center;
+    font-size: 12px;
+    padding-top: 19px;
 }
 
 footer ul{
