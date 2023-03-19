@@ -1,0 +1,105 @@
+:root{
+    --green: #069D47;
+    --dark-green: #002F15;
+}
+
+@font-face {
+    font-family: Shrikhand;
+    src: url(./fonts/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: Philosopher;
+    src: url(./fonts/Philosopher-Regular.ttf);
+}
+
+header{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Philosopher;
+    flex-wrap: wrap;
+}
+
+header .logo{
+    color: var(--green);
+    font-family: Shrikhand;
+}
+
+header a{
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+header ul{
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    height: auto;
+    min-width: 100%;
+}
+.welcome_box{
+    height: 30%;
+    width: 25%; 
+}
+
+.welcome_box h2{
+    color: var(--green);
+    font-family: Shrikhand;
+}
+
+.welcome_box p{
+    color: var(--dark-green);
+    font-family: Philosopher;
+}
+
+.welcome_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.welcome_box button{
+    background-color: white;
+    font-family: Philosopher;
+    font-style: var(--dark-green);
+    border-color: hsl(0, 0%, 75%);
+    border-radius: 35px;
+    height: 35px;
+    width: 130px;
+    align-items: center;
+}
+
+.welcome_box button:hover{
+    background-color: var(--green);
+    color: white;
+}
+
+footer{
+    background-color: #069D47;
+    font-family: Philosopher;
+    height: 95px;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+footer a{
+    color: #ffffff;
+    margin-right: 10px;
+}
+
