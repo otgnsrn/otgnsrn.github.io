@@ -1,0 +1,91 @@
+:root{
+    --green: #069D47;
+    --dark-green: #002F15;
+    --orange: #f15e23;
+}
+
+@font-face {
+    font-family: Shrikhand;
+    src: url(./fonts/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: Philosopher;
+    src: url(./fonts/Philosopher-Regular.ttf);
+}
+
+header{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Philosopher;
+    flex-wrap: wrap;
+}
+
+header .logo{
+    color: var(--green);
+    font-family: Shrikhand;
+}
+
+header a{
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+header ul{
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+  
+  .nav-links {
+    list-style: none;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    padding: 0 1.25rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .nav-links li a:hover {
+    color: var(--green);
+  }
+  
+  button {
+    background: var(--green);
+    cursor: pointer;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    transition: all 0.5s ease 0s;
+    margin-left: 20px;
+  }
+  
+  button:hover {
+    background: var(--orange);
+  }
+  .food_recipe_main{
+    display: flex;
+    text-align: left;
+  }
+  .container{
+    flex: 50%;
+  }
+  .icons{
+    text-align: right;
+  }
+
+  
