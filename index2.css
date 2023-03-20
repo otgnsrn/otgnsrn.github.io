@@ -84,15 +84,21 @@ a{
     flex-direction: row;
     justify-content: center;
     text-align: left;
-
   }
   .icons{
     text-align: right;
+  }
+  .ingridents{
+    margin: 2%;
+
+  }
+  .recipe_requiment img{
+    width: 400px;
+    height: 350px;
   }
 .instruction_set{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-align: left;
 }
   
