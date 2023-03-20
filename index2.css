@@ -42,25 +42,27 @@ a{
     text-decoration: none;
 }
   
-  .nav-links {
+  nav{
     list-style: none;
   }
   
-  .nav-links li {
+  nav li {
     display: inline-block;
     padding: 0 1.25rem;
   }
   
-  .nav-links li a {
+  nav li a {
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     transition: all 0.5s ease 0s;
   }
   
-  .nav-links li a:hover {
+  nav li a:hover {
     color: var(--green);
   }
+  
+
   
   button {
     background: var(--green);
@@ -79,10 +81,10 @@ a{
   }
   .food_recipe_main{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-align: left;
-  }
-  .container{
-    flex: 50%;
+
   }
   .icons{
     text-align: right;
