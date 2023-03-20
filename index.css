@@ -14,38 +14,51 @@
 }
 
 header{
-    list-style-type: none;
+    width: 100%;
+    margin: auto;
+
+}
+
+nav{
+    margin: 30px auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: Philosopher;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 header .logo{
     color: var(--green);
     font-family: Shrikhand;
+    font-size: 24px;
 }
 
 header a{
+    text-decoration: none;
     color: var(--dark-green);
     font-weight: bold;
+    font-size: 21px;
 }
 
 header ul{
+    flex: 1;
+    text-align: right;
+}
+
+header li{
+    display: inline-block;
     list-style-type: none;
-    margin-top: 30px;
+    margin: 0;
 }
 
-a{
-    text-decoration: none;
-}
-
-img{
+.background{
+    position: relative;
     height: auto;
     min-width: 100%;
 }
+
 .welcome_box{
+    position: absolute;
+    top: 400px;
+    left: 140px;
     height: 30%;
     width: 25%; 
 }
@@ -53,52 +66,62 @@ img{
 .welcome_box h2{
     color: var(--green);
     font-family: Shrikhand;
+    font-size: 42px;
 }
 
 .welcome_box p{
     color: var(--dark-green);
     font-family: Philosopher;
+    font-size: 24px;
 }
 
 .welcome_buttons{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .welcome_box button{
     background-color: white;
+
     font-family: Philosopher;
     font-style: var(--dark-green);
+
     border-color: hsl(0, 0%, 75%);
     border-radius: 35px;
-    height: 35px;
-    width: 130px;
+
+    height: 40px;
+    width: 200px;
+
     align-items: center;
 }
 
 .welcome_box button:hover{
+    border: none;
     background-color: var(--green);
     color: white;
 }
 
 footer{
+    height: 95px;
+    margin: 0;
     background-color: #069D47;
     font-family: Philosopher;
-    height: 95px;
-    align-items: center;
 }
 
 footer ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
     flex-wrap: wrap;
-    align-content: center;
+    text-decoration: none; 
+    list-style-type: none;
+    margin-top: 40px;
+    
 }
 
 footer a{
+    text-decoration: none;
+    margin-left: 15px;
     color: #ffffff;
     margin-right: 10px;
 }
