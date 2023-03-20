@@ -89,5 +89,10 @@ a{
   .icons{
     text-align: right;
   }
-
+.instruction_set{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
   
