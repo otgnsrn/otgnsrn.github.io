@@ -100,7 +100,7 @@ a{
     height: 350px;
     justify-content: center;
   }
-.instruction_set{
+aside{
     display: flex;
     flex-direction: row;
     justify-content: center;
