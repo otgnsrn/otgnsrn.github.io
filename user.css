@@ -1,0 +1,113 @@
+:root{
+    --green: #069D47;
+    --dark-green: #002F15;
+}
+
+@font-face {
+    font-family: Shrikhand;
+    src: url(./fonts/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: Philosopher;
+    src: url(./fonts/Philosopher-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter-Regular.ttf);
+}
+header{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .logo{
+    color: var(--green);
+    font-family: Shrikhand;
+}
+
+header a{
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+header ul{
+    list-style-type: none;
+    margin-top: 30px;
+}
+  
+nav{
+    list-style: none;
+}
+  
+nav li {
+    display: inline-block;
+    padding: 0 1.25rem;
+}
+  
+nav li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    transition: all 0.5s ease 0s;
+}
+  
+nav li a:hover {
+    color: var(--green);
+}
+
+.user_cover{
+    position: relative;
+    justify-content: center;
+}
+
+.user_details{
+    position: absolute;
+    top: 25rem;
+    left: 45rem;
+    text-align: center;
+    font-family: Inter;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 50rem;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.box_description{
+    margin-left: 2rem;
+    font-family: Inter;
+}
+
+.button_seemore{
+    width: 50rem;
+    height: 3rem;
+    margin-left: 5rem;
+    border-color: hsl(0, 0%, 75%);
+    border-radius: 35px;
+    background-color: white;
+    color: var(--dark-green);
+    font-family: Inter;
+    font-size: 14px;
+}
+
+.button_seemore:hover{
+    background-color: var(--green);
+    color: white;
+    border: none;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+

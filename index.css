@@ -38,6 +38,10 @@ header a{
     font-size: 21px;
 }
 
+header a:hover{
+    color: var(--green);
+}
+
 header ul{
     flex: 1;
     text-align: right;
@@ -103,6 +107,7 @@ header li{
 }
 
 footer{
+    padding-left: 300px;
     height: 95px;
     margin: 0;
     background-color: #069D47;
@@ -121,8 +126,7 @@ footer ul{
 
 footer a{
     text-decoration: none;
-    margin-left: 15px;
     color: #ffffff;
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
