@@ -31,6 +31,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 1rem 0 1rem;
 }
 
 header nav{
@@ -78,7 +79,7 @@ main img{
     width: 30rem;
     height: auto;
     left: 3rem;
-    text-align: center;
+    text-align: left;
     align-self: center;
 }
 
@@ -94,6 +95,7 @@ main img{
     color: var(--dark-green);
     font-family: Philosopher;
     font-size: 1.625rem;
+    font-weight: 600;
 }
 
 .welcome_buttons{
@@ -114,7 +116,7 @@ main img{
     border-radius: 35px;
 
     width: 13rem;
-    height: 3rem;
+    height: 3.2rem;
 
     align-items: center;
 }
@@ -137,7 +139,7 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 0 15rem 0 15rem;
+    padding: 1rem 15rem 1rem 15rem;
 }
 
 footer a{
