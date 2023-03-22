@@ -1,0 +1,250 @@
+:root{
+    --green: #069D47;
+    --dark-green: #002F15;
+    --gray: hsl(0, 0%, 75%);
+    --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
+    --form-input-border: 1px solid var(--gray);
+    --button-border: 3px solid var(--green);
+}
+
+@font-face {
+    font-family: Shrikhand;
+    src: url(./fonts/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: Philosopher;
+    src: url(./fonts/Philosopher-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter-Regular.ttf);
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr 8.7fr 0.1fr;
+    grid-template-areas: 
+        "header header"
+        "cover cover"
+        "h2 h2"
+        "section main" 
+        "footer footer";
+    margin: 0;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1rem 0 1rem;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--dark-green);
+    font-family: Philosopher;
+    font-weight: bold;
+    font-size: 1.313rem;
+}
+header .nav1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .nav1 .logo{
+    align-self: center;
+    color: var(--green);
+    font-family: Shrikhand;
+    font-size: 1.2rem;
+}
+
+header .logo h1{
+    margin: 0;
+}
+
+header .nav1 ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .nav1 ul li{
+    margin-left: 2rem;
+}
+
+header .nav2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+header .nav2 ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .nav2 ul li{
+    margin-right: 1.5rem;
+}
+
+
+header a:hover{
+    color: var(--green);
+}
+
+.user_cover{
+    grid-area: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user_details{
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    font-family: Inter;
+}
+
+.h2_jornemeh{
+    grid-area: h2;
+    margin-left: 7rem;
+    font-family: Philosopher;
+}
+
+.jor_nemeh{
+    grid-area: section;
+    margin-left: 7rem;
+    width: 17rem;
+    height: 17rem;
+    justify-items: center;
+    text-align: center;
+    background-color: var(--gray);
+    opacity: 60%;
+    font-family: Inter;
+    font-size: 0.7rem;
+}
+
+
+
+main{
+    grid-area: main;
+    margin-bottom: 5rem;
+    padding: 1rem 2rem 2rem 2rem;
+    width: 70%;
+    height: auto;
+    box-shadow: var(--background-blur);
+    align-self: stretch;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Inter;
+}
+
+main form label{
+    font-weight: bold;
+}
+
+main form input{
+    margin-top: 0.5rem;
+    border: var(--form-input-border);
+    height: 2rem;
+}
+
+main form select{
+    margin-top: 0.5rem;
+    border: var(--form-input-border);
+    height: 2rem;
+    width: 10rem;
+}
+
+main .zaawar_oruulah{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+main .zaawar_oruulah input{
+    margin-left: 1rem;
+    border: var(--form-input-border);
+    height: 2rem;
+    width: 100%;
+}
+
+main .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10rem;
+}
+
+main .buttons .cancel{
+    width: 7rem;
+    height: 2rem;
+    background-color: white;
+    border: var(--button-border);
+    border-radius: 10px;
+    color: var(--green);
+}
+
+main .buttons .save{
+    margin-left: 1rem;
+    width: 7rem;
+    height: 2rem;
+    background-color: var(--green);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+footer{
+    grid-area: footer;
+    margin: 0;
+    background-color: #069D47;
+    font-family: Philosopher;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 15rem 1rem 15rem;
+}
+
+footer a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 900px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 0.1fr 2fr 3fr 0.4fr;
+        grid-template-areas: 
+            "header"
+            "cover"
+            "h2"
+            "section"
+            "main"
+            "footer";
+    }
+}
