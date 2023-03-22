@@ -1,6 +1,8 @@
 :root{
     --green: #069D47;
     --dark-green: #002F15;
+    --gray: hsl(0, 0%, 75%);
+    --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
 }
 
 @font-face {
@@ -79,7 +81,6 @@ header .nav2{
     flex-direction: row;
     align-items: center;
     justify-content: end;
-    margin-right: -500px;
 }
 
 header .nav2 ul{
@@ -106,11 +107,6 @@ header a:hover{
     margin-bottom: 2rem;
 }
 
-.user_cover img{
-    height: auto;
-    min-width: 100%;
-}
-
 .user_details{
     position: absolute;
     align-self: center;
@@ -119,34 +115,55 @@ header a:hover{
 }
 
 main{
+    margin-left: 5rem;
     grid-area: main;
     margin-bottom: 3rem;
+}
+
+main img{
+    border-radius: 12px;
+}
+
+main h2{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .box{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 50rem;
-    margin-left: 5rem;
     margin-bottom: 2rem;
 }
 
 .box_description{
-    margin-left: 2rem;
+    align-self: stretch;
+    margin: 0 1rem 0 1rem;
+    padding-left: 1rem;
     font-family: Inter;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: var(--background-blur);
+}
+
+.box_description h3{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .button_seemore{
-    width: 50rem;
-    height: 3rem;
-    margin-left: 5rem;
+    width: 97%;
+    height: 4rem;
     border-color: hsl(0, 0%, 75%);
+    border-style: solid;
     border-radius: 35px;
     background-color: white;
     color: var(--dark-green);
     font-family: Inter;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .button_seemore:hover{
@@ -162,6 +179,15 @@ aside{
     margin-left: 2rem;
 }
 
+aside h2{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.saved img{
+    margin: 0.5rem;
+}
 
 footer{
     grid-area: footer;

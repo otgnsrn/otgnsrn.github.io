@@ -113,6 +113,7 @@ main img{
     font-style: var(--dark-green);
 
     border-color: var(--gray);
+    border-style: solid;
     border-radius: 35px;
 
     width: 13rem;
