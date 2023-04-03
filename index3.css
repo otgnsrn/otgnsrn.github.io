@@ -131,7 +131,20 @@ main img{
 .main_boxes{
     display: flex;
     flex-direction: row;
-    place-self: center;
+   
+}
+.main_category{
+    margin: 0 10rem  0 10rem ;
+}
+main h2{
+    margin: 0 10rem  0 6rem ;
+}
+.main_boxes img{
+    width: 90%;
+    height: auto;
+}
+.button_1{
+    margin: 19rem 0 0 0;
 }
 
 
