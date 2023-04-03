@@ -1,0 +1,213 @@
+:root{
+    --green: #069D47;
+    --dark-green: #002F15;
+    --gray: hsl(0, 0%, 75%);
+    --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
+    --form-input-border: 1px solid var(--gray);
+    --button-border: 3px solid var(--green);
+}
+
+@font-face {
+    font-family: Shrikhand;
+    src: url(./fonts/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: Philosopher;
+    src: url(./fonts/Philosopher-Regular.ttf);
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 2fr max-content 0.1fr;
+    grid-template-areas: 
+        "header header header header header"
+        "cover cover cover cover cover"
+        "main main main main main"
+        "footer footer footer footer footer";
+    margin: 0;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1rem 0 1rem;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--dark-green);
+    font-family: Philosopher;
+    font-weight: bold;
+    font-size: 1.313rem;
+}
+header .nav1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .nav1 .logo{
+    align-self: center;
+    color: var(--green);
+    font-family: Shrikhand;
+    font-size: 1.2rem;
+}
+
+header .logo h1{
+    margin: 0;
+}
+
+header .nav1 ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .nav1 ul li{
+    margin-left: 2rem;
+}
+
+
+header .nav2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+header .nav2 ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .nav2 ul li{
+    margin-right: 1.5rem;
+}
+
+
+header a:hover{
+    color: var(--green);
+}
+
+main{
+    margin: 5rem;
+    margin-bottom: 3rem;
+}
+
+main img{
+    border-radius: 12px;
+}
+
+.main_cover{ 
+    grid-area: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.main_cover_details{
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    font-family: Inter;
+}
+
+
+
+.main_best{
+    grid-area: main_best;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_boxes{
+    display: flex;
+    flex-direction: row;
+    place-self: center;
+}
+
+
+button{
+    width: 7rem;
+    height: 2rem;
+    background-color: white;
+    border: var(--button-border);
+    border-radius: 10px;
+    color: var(--green);
+    align-self: self-end;
+}
+
+
+.main_recommend{
+    grid-area: recommend;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_category{
+    grid-area: category;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_advice{
+    grid-area: advice;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_latest{
+    grid-area: latest;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_cover_details{
+    display: grid;
+    place-items: center;
+}
+
+footer{
+    grid-area: footer;
+    margin: 0;
+    background-color: #069D47;
+    font-family: Philosopher;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 15rem 1rem 15rem;
+}
+
+footer a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 2fr max-content 0.4fr;
+        grid-template-areas: 
+            "header"
+            "cover"
+            "main"
+            "footer";
+    }
+}
+
