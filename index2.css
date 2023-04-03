@@ -22,16 +22,17 @@
 body{
   display: grid;
   height: 100vh;
-  grid-template-columns: 5fr 5fr;
-  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+  grid-template-columns: 5fr 5fr 5fr;
+  grid-template-rows: 0.4fr 2fr 0.4fr 2fr 2fr 0.4fr;
   grid-template-areas: 
-      "header header"
-      "food_recipe_main food_recipe_main"
-      "editor editor"
-      "ingridents main"
-      "recommend main" 
-      "footer footer";
+      "header header header"
+      "food_recipe_main food_recipe_main food_recipe_main"
+      "editor editor editor"
+      "ingridents main main"
+      "recommend main main" 
+      "footer footer footer";
   margin: 0;
+  font-size: 1.3rem;
 }
 
 
@@ -104,12 +105,11 @@ header a:hover{
   display: flex;
   flex-direction: row;
   grid-area: food_recipe_main;
-  padding: 2rem 0 1rem 0;
+  /*padding: 2rem 0 1rem 0;*/
+  margin: 0 6rem 0 8rem;
 
 }
 .food_recipe_main img{
-  margin-left: 5.5rem;
-  
   border-radius: 12px;
   
 }
@@ -131,20 +131,28 @@ header a:hover{
   grid-area: editor;
   display: flex;
   flex-direction: row;
-  padding: 1rem 1rem 1rem 5.5rem;
+  padding:  0 0 1rem 0;
   font-family: Inter;
+  margin: 0 6rem 0 8rem;
   
+}
+ 
+.editor img{
+  padding-top: 0.3rem;
 }
 
 .ingridents{
   grid-area: ingridents;
-  margin: 1rem 1rem 1rem 5.5rem;
-  padding: 1rem 1rem 1rem 1.5rem;
+  margin: 0 6rem 0 8rem;
+  padding: 0.5rem 1rem 1rem 1.5rem;
   font-family: Inter;
   background-color: white;
   border-radius: 12px;
   box-shadow: var(--background-blur);
   
+}
+.ingridents ul li{
+  margin-left: 2rem;
 }
 
 main{
@@ -157,12 +165,26 @@ main{
   padding-left: 10%;
   font-family: Inter;
   align-self: stretch;
-  padding: 1rem 1rem 1rem 5.5rem;
+  padding: 1rem 1rem 1rem 0;
+  margin: 0 6rem 0 8rem;
   
 }
 .recipe_requiment img{
-  width: 20rem;
+  width: 14rem;
   padding: 1rem 1rem 1rem 4rem;
+}
+.instruction img{
+  margin: 0 6rem 0 4rem;
+  padding: 1rem; 
+}
+.instruction p{
+  padding: 1rem; 
+  margin: 0 11rem 2rem 4rem;
+
+  font-family: Inter;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: var(--background-blur);
 }
 
 footer{
@@ -193,7 +215,7 @@ ul{
 @media only screen and (max-width: 800px){
   body{
       grid-template-columns: 1fr;
-      grid-template-rows: 0.4fr 1fr 0.2fr 1fr 3fr 1fr 0.4fr;
+      grid-template-rows: 0.4fr 1fr 0.2fr 1fr 3fr 3fr 0.4fr;
       grid-template-areas: 
           "header"
           "food_recipe_main"
