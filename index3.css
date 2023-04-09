@@ -95,16 +95,7 @@ header a:hover{
     color: var(--green);
 }
 
-main{
-    margin: 5rem;
-    margin-bottom: 3rem;
-}
-
-main img{
-    border-radius: 12px;
-}
-
-.main_cover{ 
+.main_cover{
     grid-area: cover;
     position: relative;
     display: flex;
@@ -120,33 +111,48 @@ main img{
     font-family: Inter;
 }
 
-
-
-.main_best{
-    grid-area: main_best;
-    display: flex;
-    flex-direction: column;
+main{
+    grid-area: main;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 6rem;
 }
 
 .main_boxes{
+    grid-area: main;
     display: flex;
     flex-direction: row;
-   
-}
-.main_category{
-    margin: 0 10rem  0 10rem ;
-}
-main h2{
-    margin: 0 10rem  0 6rem ;
-}
-.main_boxes img{
-    width: 90%;
-    height: auto;
-}
-.button_1{
-    margin: 19rem 0 0 0;
 }
 
+.main_best{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+main img{
+    border-radius: 12px;
+}
+
+main h2{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.main_best img{
+    width: 10rem;
+    height: auto;
+}
+
+.main_category img{
+    width: 10rem;
+    height: auto;
+}
+
+.main_latest img{
+    width: 10rem;
+    height: auto;
+}
 
 button{
     width: 7rem;
@@ -155,37 +161,6 @@ button{
     border: var(--button-border);
     border-radius: 10px;
     color: var(--green);
-    align-self: self-end;
-}
-
-
-.main_recommend{
-    grid-area: recommend;
-    display: flex;
-    flex-direction: row;
-}
-
-.main_category{
-    grid-area: category;
-    display: flex;
-    flex-direction: row;
-}
-
-.main_advice{
-    grid-area: advice;
-    display: flex;
-    flex-direction: row;
-}
-
-.main_latest{
-    grid-area: latest;
-    display: flex;
-    flex-direction: row;
-}
-
-.main_cover_details{
-    display: grid;
-    place-items: center;
 }
 
 footer{
