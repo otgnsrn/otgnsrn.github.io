@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Prime ribs pizza",
+        "description": "Home made prime ribs pizza",
+        "category": "#Dinner",
+        "image": "./img1/img1.webp",
+        "views":"123",
+        "review": "9/10"
+    },
+    {
+        "name": "Ganjang Gejang",
+        "description": "Амталсан хавчны мах",
+        "category": "#Олон орны хоол",
+        "image": "./img1/img2.webp",
+        "views":"123",
+        "review": "9/10"
+    },
+    {
+        "name": "Алимны пирог",
+        "description": "Ванилны зайрмагтай, алимны пирог",
+        "category": "#Baking",
+        "image": "./img1/img3.webp",
+        "views":"123",
+        "review": "9/10"
+    },
+    {
+        "name": "Банштай шөл",
+        "description": "Солонгосчуудын цагаан сарын хоол",
+        "category": "Олон орны хоол",
+        "image": "./img1/img4.webp",
+        "views":"123",
+        "review": "9/10"
+    },
+    {
+        "name": "Бананатай талх",
+        "description": "Бананатай амтат халуун талх",
+        "category": "Baking",
+        "image": "./img1/img5.webp",
+        "views":"123",
+        "review": "9/10"
+    },
+    {
+        "name": "Bruschettea",
+        "description": "Өглөөний хоолонд хийж идэхэд тохиромжтой",
+        "category": "Breakfast",
+        "image": "./img1/img6.webp",
+        "views":"123",
+        "review": "9/10"
+    },
+    {
+        "name": "Malatang",
+        "description": "Хүйтэнд идэхэд тохиромжтой",
+        "category": "Олон орны хоол",
+        "image": "./img1/img7.webp",
+        "views":"123",
+        "review": "9/10"
+    },
+    {
+        "name": "Salmon bowl",
+        "description": "Салмон засастай, будаатай хоол, Salmon sashimi & avocado rice bowl",
+        "category": "Олон орны хоол",
+        "image": "./img1/img8.webp",
+        "views":"123",
+        "review": "9/10"
+    },
+    {
+        "name": "Oyster and seaweed Muchim",
+        "description": "Oyster and seaweed Muchim with buckwheat noodle",
+        "category": "Олон орны хоол",
+        "image": "./img1/img9.webp",
+        "views":"123",
+        "review": "9/10"
+    },
+    {
+        "name": "Pumpkin bread",
+        "description": "Намрын улиралд тохиромжтой, хулууны талх",
+        "category": "Baking",
+        "image": "./img1/img1.webp",
+        "views":"123",
+        "review": "9/10"
+    },
+    {
+        "name": "Chipotle Burrito Bowl",
+        "description": "Home made prime ribs pizza",
+        "category": "Lunch",
+        "image": "./img1/img2.webp",
+        "views":"123",
+        "review": "9/10"
+    }
+]
