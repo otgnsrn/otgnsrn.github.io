@@ -22,16 +22,17 @@
 body{
   display: grid;
   height: 100vh;
-  grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr;
-  grid-template-rows: 0.1fr 1.5fr 0.1fr 4fr 4fr 0.1fr;
+  grid-template-columns: 3fr 5fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
   grid-template-areas: 
-      "header header header header header header"
-      "food_recipe_main food_recipe_main food_recipe_main food_recipe_main food_recipe_main food_recipe_main"
-      "editor editor editor editor editor editor"
-      "ingridents ingridents main main main main"
-      "recommend recommend main main main main" 
-      "footer footer footer footer footer footer";
+      "header header"
+      "food_recipe_main food_recipe_main"
+      "editor editor"
+      "ingridents main"
+      "recommend main" 
+      "footer footer";
   margin: 0;
+  font-size: 1.3rem;
 }
 
 header{
@@ -104,24 +105,28 @@ header a:hover{
   grid-area: food_recipe_main;
   display: flex;
   flex-direction: row;
-  padding: 2rem 3rem 0 3rem;
+  grid-area: food_recipe_main;
 
 }
 .food_recipe_main img{
   border-radius: 12px;
-  width: 50%;
+  width: 40%;
   height: auto;
   padding-right: 1rem;
+  padding-left: 5rem;
 }
 
 .food_recipe_main .container{
+  grid-area: food_recipe_details;
   padding: 0 4rem 0 4rem;
   font-family: Inter;
   background-color: white;
   border-radius: 12px;
   box-shadow: var(--background-blur);
-  width: 50%;
+  width: 4
+  60%;
   height: auto;
+  margin-right: 6rem;
 } 
 .button1{
   border-radius: 12px;
@@ -147,27 +152,30 @@ header a:hover{
   grid-area: editor;
   display: flex;
   flex-direction: row;
-  padding: 1rem 1rem 1rem 3rem;
+  padding: 1rem 1rem 1rem 5.5rem;
   font-family: Inter;
-
   
 }
 .editor img{
-  grid-area: editor_img;
-  display: flex;
+  padding-top: 20px;
 }
-.ingridents{
-  grid-area: ingridents;
-  padding: 0  0 0 3rem;
+.ingridents h3{
+  font-family: Inter;
+  align-self: stretch;
+  padding: 0 1rem 1rem 5.5rem;
 }
 .ingridents ul{
-  padding: 1rem 1rem 1rem 1rem;
-  margin-left: 3rem;
+  grid-area: ingridents;
+  margin: 1rem 0 0 8.5rem;
+  padding: 1rem 1rem 1rem 1.5rem;
   font-family: Inter;
   background-color: white;
   border-radius: 12px;
   box-shadow: var(--background-blur);
   
+}
+.ingridents ul li{
+  margin-left: 2rem;
 }
 
 main{
@@ -181,26 +189,24 @@ main{
   padding-left: 10%;
   font-family: Inter;
   align-self: stretch;
-  padding: 0  0 0 3rem;
+  padding: 1rem 1rem 1rem 5.5rem;
   
 }
 .recipe_requiment img{
+  width: 20rem;
+  padding: 1rem 1rem 1rem 4rem;
   width: 80%;
   height: auto;
-  padding: 1rem 1rem 1rem 3rem;
 }
-
-.instruction_set{
-  grid-area: main;
-  padding: 0 3rem 0 8rem;
-  font-family: Inter;
-  align-self: stretch;
-} 
 .instruction img{
-  width: 80%;
+  margin: 0 6rem 0 4rem;
+  padding: 1rem; 
+  width: 70%;
   height: auto;
-  text-align: center;
-  padding:0 4rem 0 4rem;
+  border-radius: 12px;
+}
+.instruction{
+
 }
 
 .instruction p{
@@ -212,38 +218,39 @@ main{
   margin-bottom: 3rem;
 }
 footer{
-  grid-area: footer;
-  margin: 0;
-  background-color: #069D47;
-  font-family: Philosopher;
+    grid-area: footer;
+    margin: 0;
+    background-color: #069D47;
+    font-family: Philosopher;
 }
 
 footer ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 1rem 15rem 1rem 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 15rem 1rem 15rem;
 }
 
 footer a{
-  font-size: 0.8rem;
-  text-decoration: none;
-  color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
 }
 
 ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 @media only screen and (max-width: 800px){
   body{
       grid-template-columns: 1fr;
-      grid-template-rows: 0.1fr 1fr 0.2fr 1fr 3fr 4fr 0.1fr;
+      grid-template-rows: 0.4fr 1fr 1fr 0.2fr 2fr 3fr 1fr 0.4fr;
       grid-template-areas: 
           "header"
           "food_recipe_main"
           "editor"
+          "food_recipe_details"
           "ingridents"
           "main"
           "recommend"
@@ -254,7 +261,7 @@ ul{
     padding-left: 10%;
     font-family: Inter;
     align-self: stretch;
-    padding: 0  0 0 3rem;
+    padding: 0  0 0 6rem;
     
   }
   .recipe_requiment img{
@@ -264,7 +271,7 @@ ul{
   }
   .instruction_set{
     grid-area: main;
-    padding: 0 3rem 0 3rem;
+    padding: 0 3rem 0 6rem;
     font-family: Inter;
     align-self: stretch;
   } 
