@@ -108,7 +108,7 @@ header a:hover{
   grid-area: food_recipe_main;
 
 }
-.food_recipe_main img{
+.food_recipe_main iframe{
   border-radius: 12px;
   width: 40%;
   height: auto;
