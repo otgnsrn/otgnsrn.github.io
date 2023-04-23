@@ -162,6 +162,7 @@ main h2{
 .main_boxes{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .main_box img{
@@ -273,4 +274,16 @@ footer a{
     font-size: 0.8rem;
     text-decoration: none;
     color: white;
+}
+
+@media only screen and (max-width: 900px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr max-content 0.4fr;
+        grid-template-areas: 
+            "header"
+            "cover"
+            "main"
+            "footer";
+    }
 }
