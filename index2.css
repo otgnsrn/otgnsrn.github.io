@@ -101,12 +101,13 @@ header .nav2 ul li{
 header a:hover{
     color: var(--green);
 }
+
 .food_recipe_main{
   grid-area: food_recipe_main;
   display: flex;
   flex-direction: row;
   grid-area: food_recipe_main;
-
+  margin-top: 3rem;
 }
 .food_recipe_main iframe{
   border-radius: 12px;
@@ -123,10 +124,10 @@ header a:hover{
   background-color: white;
   border-radius: 12px;
   box-shadow: var(--background-blur);
-  width: 4
-  60%;
+  width: 35%;
   height: auto;
   margin-right: 6rem;
+
 } 
 .button1{
   border-radius: 12px;
@@ -145,7 +146,10 @@ header a:hover{
   width: 80px;
 }
 .icons{
-  margin-left: 23rem;
+  margin-left: 18rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .editor{
