@@ -22,7 +22,7 @@
 body{
     display: grid;
     height: 100vh;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr;
     grid-template-rows: 0.1fr max-content 0.1fr;
     grid-template-areas: 
         "header header"
@@ -92,6 +92,7 @@ main h2 b{
 }
 main div p{
     text-align: center;
+    font-family: Philosopher;
 }
 
 
@@ -117,7 +118,7 @@ main div form input{
     width: 250px;
 }
 .connection{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 25px;
     border: 1px solid #868686;
     padding: 15px;
@@ -131,8 +132,9 @@ main div form input{
 
 }
 .connection img{
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.3rem;
 }
 main div form button{
     background-color: var(--green);
