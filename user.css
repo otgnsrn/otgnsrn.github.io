@@ -3,6 +3,13 @@
     --dark-green: #002F15;
     --gray: hsl(0, 0%, 75%);
     --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
+    --form-input-border: 1px solid var(--gray);
+    --button-border: 3px solid var(--green);
+    --cover-h2-size: 2rem;
+    --main-h2-size: 1.5rem;
+    --img-border-radius: 5px;
+    --blur-border-radius: 12px;
+    --category-radius: 90px;
 }
 
 @font-face {
@@ -173,6 +180,14 @@ main h2{
     background-color: var(--green);
     color: white;
     border: none;
+}
+
+.foodCat{
+    width: fit-content;
+    padding: 0.3rem;
+    background-color: var(--green);
+    color: white;
+    border-radius: var(--category-radius);
 }
 
 aside{
