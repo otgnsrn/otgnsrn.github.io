@@ -94,6 +94,20 @@ main div form input{
     margin: 4px;
     width: 250px;
 }
+.connection{
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid #868686;
+    padding: 15px;
+    margin: 4px;
+    width: 250px;
+    height: 1rem;
+    text-align: center;
+}
+.connection img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
 main div form button{
     background-color: var(--green);
     color: white;
@@ -129,6 +143,9 @@ main div form button:hover{
     margin: 5px;
     width: 283px;
     
+}
+main div form button a{
+    color: white;
 }
 footer{
     grid-area: footer;
