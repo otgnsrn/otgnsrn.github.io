@@ -67,6 +67,10 @@ header a:hover{
     color: var(--green);
 }
 
+ul{
+    list-style-type: none;
+}
+
 main{
     position: relative;
     display: flex;
@@ -103,6 +107,10 @@ main div form input{
     width: 250px;
     height: 1rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+
 }
 .connection img{
     height: 1.5rem;

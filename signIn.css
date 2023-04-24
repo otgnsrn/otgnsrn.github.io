@@ -65,6 +65,10 @@ header a:hover{
     color: var(--green);
 }
 
+ul{
+    list-style-type: none;
+}
+
 main{
     position: relative;
     display: flex;
@@ -78,20 +82,30 @@ main img{
 }
 
 main .form{
-    padding: 1rem 4rem 2rem 4rem ;
+    padding: 4rem;
     margin: 0 0 2rem 0 ;
     grid-area: main;
     background-color: white;
     border-radius: 12px;
     box-shadow: var(--background-blur);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
 }
 
-main div form input{
+main form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main form input{
     background-color: white;
     border-radius: 25px;
     border: 1px solid #868686;
     padding: 15px;
-    margin: 4px;
+    
     width: 250px;
 }
 
@@ -105,7 +119,7 @@ main div form button{
     border-style: solid;
     border-radius: 35px;
 
-    width: 13rem;
+    width: 14rem;
     height: 3.2rem;
 
     align-items: center;
@@ -115,6 +129,7 @@ main div form button{
 }
 
 main .form h2{
+    margin: 0;
     color: var(--dark-green);
     font-family: Philosopher;
     font-weight: bold;
@@ -133,13 +148,14 @@ main form label{
     font-family: Inter;
     color: var(--dark-green);
     font-weight: 600;
-    font-size: 17px;
+    font-size: 0.6rem;
 }
 
 main p{
     font-size: 22px;
     font-family: Philosopher;
     text-align: center;
+    
 
 }
 
