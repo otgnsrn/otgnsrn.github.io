@@ -122,6 +122,7 @@ ul{
     align-self: center;
     text-align: center;
     font-family: Inter;
+    
 }
 
 .main_cover_details h2{
@@ -129,6 +130,7 @@ ul{
 }
 
 .main_cover_details p{
+    
     width: 30rem;
 }
 

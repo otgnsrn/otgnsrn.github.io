@@ -27,7 +27,7 @@
         "name": "Банштай шөл",
         "description": "Солонгосчуудын цагаан сарын хоол",
         "category": "#Олон орны хоол",
-        "image": "./img1/13.jpg",
+        "image": "./img1/img6.webp",
         "views":"1046",
         "review": "9/10"
     },
@@ -35,7 +35,7 @@
         "name": "Бананатай талх",
         "description": "Бананатай амтат халуун талх",
         "category": "#Baking",
-        "image": "./img1/8.jpg",
+        "image": "./img1/img5.webp",
         "views":"5836",
         "review": "9.5/10"
     },
@@ -75,7 +75,7 @@
         "name": "Pumpkin bread",
         "description": "Намрын улиралд тохиромжтой, хулууны талх",
         "category": "#Baking",
-        "image": "./img1/14.jpg",
+        "image": "./img1/img9.webp",
         "views":"5839",
         "review": "8/10"
     },
