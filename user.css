@@ -10,6 +10,27 @@
     --img-border-radius: 5px;
     --blur-border-radius: 12px;
     --category-radius: 90px;
+    --border_radius35: 35px;
+    --grid_height: 100vh;
+    --grid_row_1: 1fr;
+    --grid_row_01: 0.1fr;
+    --margin_0: 0;
+    --margin_header: 0 1rem 0 1rem;
+    --rem_05: 0.5rem;
+    --rem_03: 0.3rem;
+    --rem_1: 1rem;
+    --rem_12: 1.2rem;
+    --rem_15: 1.5rem;
+    --rem_2: 2rem;
+    --rem_3: 3rem;
+    --rem_4: 4rem;
+    --rem_5: 5rem;
+    --rem_30: 30rem;
+    --per_50: 50%;
+    --header_a_fontsize: 1.313rem;
+    --footer_ul_padding: 1rem 15rem 1rem 15rem;
+    --footer_a_fontsize: 0.8rem;
+
 }
 
 @font-face {
@@ -29,7 +50,7 @@
 
 body{
     display: grid;
-    height: 100vh;
+    height: var(--grid_height);
     grid-template-columns: 3.5fr 2.5fr 4fr;
     grid-template-rows: 0.1fr 1fr max-content 0.1fr;
     grid-template-areas: 
@@ -37,7 +58,7 @@ body{
         "cover cover cover"
         "main main aside" 
         "footer footer footer";
-    margin: 0;
+    margin: var(--margin_0);
 }
 
 header{
@@ -45,7 +66,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 1rem 0 1rem;
+    margin: var(--margin_header);
 }
 
 header a{
@@ -53,7 +74,7 @@ header a{
     color: var(--dark-green);
     font-family: Philosopher;
     font-weight: bold;
-    font-size: 1.313rem;
+    font-size: var(--header_a_fontsize);
 }
 header .nav1{
     display: flex;
@@ -65,11 +86,11 @@ header .nav1 .logo{
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: 1.2rem;
+    font-size: var(--rem_12);
 }
 
 header .logo h1{
-    margin: 0;
+    margin: var(--margin_0);
 }
 
 header .nav1 ul{
@@ -79,7 +100,7 @@ header .nav1 ul{
 }
 
 header .nav1 ul li{
-    margin-left: 2rem;
+    margin-left: var(--rem_2);
 }
 
 
@@ -97,7 +118,7 @@ header .nav2 ul{
 }
 
 header .nav2 ul li{
-    margin-right: 1.5rem;
+    margin-right: var(--rem_15);
 }
 
 
@@ -111,7 +132,7 @@ header a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: var(--rem_2);
 }
 
 .user_details{
@@ -122,52 +143,52 @@ header a:hover{
 }
 
 main{
-    margin-left: 5rem;
+    margin-left: var(--rem_5);
     grid-area: main;
-    margin-bottom: 3rem;
+    margin-bottom: var(--rem_3);
 }
 
 main img{
-    width: 50%;
+    width: var(--per_50);
     height: auto;
-    border-radius: 12px;
+    border-radius: var(--blur-border-radius);
 }
 
 main h2{
     font-family: Inter;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: var(--rem_15);
 }
 
 .box{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 2rem;
+    margin-bottom: var(--rem_2);
 }
 
 .box_description{
     align-self: stretch;
-    margin: 0 1rem 0 1rem;
-    width: 30rem;
-    padding-left: 1rem;
+    margin: var(--margin_header);
+    width: var(--rem_30);
+    padding-left: var(--rem_1);
     font-family: Inter;
     background-color: white;
-    border-radius: 12px;
+    border-radius: var(--blur-border-radius);
     box-shadow: var(--background-blur);
 }
 
 .box_description h3{
-    font-size: 1.5rem;
+    font-size: var(--rem_15);
     font-weight: bold;
 }
 
 .button_seemore{
     width: 97%;
-    height: 4rem;
-    border-color: hsl(0, 0%, 75%);
+    height: var(--rem_4);
+    border-color: var(--gray);
     border-style: solid;
-    border-radius: 35px;
+    border-radius: var(--border_radius35);
     background-color: white;
     color: var(--dark-green);
     font-family: Inter;
@@ -184,7 +205,7 @@ main h2{
 
 .foodCat{
     width: fit-content;
-    padding: 0.3rem;
+    padding: var(--rem_03);
     background-color: var(--green);
     color: white;
     border-radius: var(--category-radius);
@@ -194,23 +215,23 @@ aside{
     grid-area: aside;
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
+    margin-left: var(--rem_2);
 }
 
 aside h2{
     font-family: Inter;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: var(--rem_15);
 }
 
 .saved img{
-    margin: 0.5rem;
+    margin: var(--rem_05);
 }
 
 footer{
     grid-area: footer;
-    margin: 0;
-    background-color: #069D47;
+    margin: var(--margin_0);
+    background-color: --green;
     font-family: Philosopher;
 }
 
@@ -218,22 +239,22 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1rem 15rem 1rem 15rem;
+    padding: var(--footer_ul_padding);
 }
 
 footer a{
-    font-size: 0.8rem;
+    font-size: var(--footer_a_fontsize);
     text-decoration: none;
     color: white;
 }
 
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: var(--margin_0);
+    padding: var(--margin_0);
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1024px){
     body{
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 1fr 3fr 2fr 0.4fr;
