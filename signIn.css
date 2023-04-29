@@ -222,7 +222,7 @@ main form label{
 footer{
     grid-area: footer;
     margin: var(--margin_0);
-    background-color:--green;
+    background-color: var(--green);
     font-family: Philosopher;
 }
 
@@ -230,7 +230,7 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: var(--footer_ul_padding)
+    padding: var(--footer_ul_padding);
 }
 
 footer a{
