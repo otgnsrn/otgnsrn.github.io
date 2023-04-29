@@ -2,6 +2,25 @@
     --green: #069D47;
     --dark-green: #002F15;
     --gray: hsl(0, 0%, 75%);
+    --grid_height: 100vh;
+    --grid_row_1: 1fr;
+    --grid_row_01: 0.1fr;
+    --margin_0: 0;
+    --margin_header: 0 1rem 0 1rem;
+    --header_a_fontsize: 1.313rem;
+    --img_min_width: 100%;
+    --rem_30: 30rem;
+    --rem_3: 3rem;
+    --rem_12: 1.2rem;
+    --per_250: 250%;
+    --rem_1625: 1.625rem;
+    --font_w600: 600;
+    --btn_width: 13rem;
+    --btn_height: 3.2rem;
+    --border_radius35: 35px;
+    --footer_ul_padding: 1rem 15rem 1rem 15rem;
+    --footer_a_fontsize: 0.8rem;
+    --screen_max_width: 1024px;
 }
 
 @font-face {
@@ -16,14 +35,14 @@
 
 body{
     display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr max-content 0.1fr;
+    height: var(--grid_height);
+    grid-template-columns: var(--grid_row_1) var(--grid_row_1) ;
+    grid-template-rows: --var(--grid_row_01) max-content 0.var(--grid_row_01);
     grid-template-areas: 
         "header header"
         "main main" 
         "footer footer";
-    margin: 0;
+    margin: var(--margin_0);
 }
 
 header{
@@ -31,7 +50,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 1rem 0 1rem;
+    margin: var(--margin_header);
 }
 
 header nav{
@@ -42,12 +61,12 @@ header .logo{
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: 1.2rem;
+    font-size: var(--rem_12);
     
 }
 
 header .logo h1{
-    margin: 0;
+    margin: var(--margin_0);
 }
 
 header a{
@@ -55,7 +74,7 @@ header a{
     color: var(--dark-green);
     font-family: Philosopher;
     font-weight: bold;
-    font-size: 1.313rem;
+    font-size: var(--header_a_fontsize);
 }
 
 header a:hover{
@@ -71,14 +90,14 @@ main{
 
 main img{
     height: auto;
-    min-width: 100%;
+    min-width: var(--img_min_width);
 }
 
 .welcome_box{
     position: absolute;
-    width: 30rem;
+    width: var(--rem_30);
     height: auto;
-    left: 3rem;
+    left: var(--rem_3);
     text-align: left;
     align-self: center;
 }
@@ -87,19 +106,19 @@ main img{
     margin: 0;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: 250%;
+    font-size: var(--per_250)
 }
 
 .welcome_box p{
     margin: 0;
     color: var(--dark-green);
     font-family: Philosopher;
-    font-size: 1.625rem;
-    font-weight: 600;
+    font-size: var(--rem_1625);
+    font-weight: var(--font_w600);
 }
 
 .welcome_buttons{
-    margin-top: 1.2rem;
+    margin-top: var(--rem_12);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -109,15 +128,15 @@ main img{
     background-color: white;
 
     font-family: Philosopher;
-    font-size: 1.375rem;
+    font-size: var(--rem_12);
     font-style: var(--dark-green);
 
     border-color: var(--gray);
     border-style: solid;
-    border-radius: 35px;
+    border-radius: var(--border_radius35);
 
-    width: 13rem;
-    height: 3.2rem;
+    width: var(--btn_width);
+    height: var(--btn_height);
 
     align-items: center;
 }
@@ -131,8 +150,8 @@ button:hover{
 
 footer{
     grid-area: footer;
-    margin: 0;
-    background-color: #069D47;
+    margin: var(--margin_0);
+    background-color: var(--green);
     font-family: Philosopher;
 }
 
@@ -140,11 +159,11 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1rem 15rem 1rem 15rem;
+    padding: var(--footer_ul_padding);
 }
 
 footer a{
-    font-size: 0.8rem;
+    font-size: var(--footer_a_fontsize);
     text-decoration: none;
     color: white;
 }
@@ -154,6 +173,7 @@ ul{
 }
 
 @media screen and (max-width: 1024px){
+   
     body{
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 2fr 0.4fr;
