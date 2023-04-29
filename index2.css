@@ -3,6 +3,44 @@
     --dark-green: #002F15;
     --orange: #f15e23;
     --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
+    --grid_height: 100vh;
+    --grid_row_1: 1fr;
+    --grid_row_3: 3fr;
+    --grid_row_5: 5fr;
+    --grid_row_01: 0.1fr;
+    --font_size13: 1.3rem;
+    --margin_0: 0;
+    --margin_1: 1rem 0 0 8.5rem;
+    --margin_2: 0 6rem 0 4rem;
+    --padding: 0  3rem 0 3rem;
+    --padding2: 5rem 0 1rem 0;
+    --padding3: 0 4rem 0 4rem;
+    --padding4: 1rem 1rem 1rem 5.5rem;
+    --padding5: 1rem 1rem 1rem 1.5rem;
+    --padding6: 1rem 1rem 1rem 4rem;
+    --padding7: 0 3rem 0 6rem;
+    --header_a_fontsize: 1.313rem;
+    --rem_30: 30rem;
+    --rem_0375: 0.375rem;
+    --rem_1: 1rem;
+    --rem_2: 2rem;
+    --rem_3: 3rem;
+    --rem_5: 5rem;
+    --rem_6: 6rem;
+    --rem_12: 1.2rem;
+    --rem_15: 1.5rem;
+    --rem18: 18rem;
+    --rem_20: 20rem;
+    --border_radius12: 12px;
+    --per_10: 10%;
+    --per_40: 40%;
+    --per_35: 35%;
+    --per_10: 10%;
+    --per_80: 80%;
+    --per_70: 70%;
+    --footer_ul_padding: 1rem 15rem 1rem 15rem;
+    --footer_a_fontsize: 0.8rem;
+
 }
 @font-face {
   font-family: Shrikhand;
@@ -21,7 +59,7 @@
 
 body{
   display: grid;
-  height: 100vh;
+  height: var(--grid_height);
   grid-template-columns: 3fr 5fr;
   grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
   grid-template-areas: 
@@ -31,8 +69,8 @@ body{
       "ingridents main"
       "recommend main" 
       "footer footer";
-  margin: 0;
-  font-size: 1.3rem;
+  margin: var(--margin_0);
+  font-size: var(--font_size13);
 }
 
 header{
@@ -40,8 +78,8 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0;  
-    padding: 0  3rem 0 3rem;
+    margin: var(--margin_0);  
+    padding: var(--padding);
 
 }
 
@@ -50,7 +88,7 @@ header a{
     color: var(--dark-green);
     font-family: Philosopher;
     font-weight: bold;
-    font-size: 1.313rem;
+    font-size: var(--header_a_fontsize);
 }
 header .nav1{
     display: flex;
@@ -62,11 +100,11 @@ header .nav1 .logo{
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: 1.2rem;
+    font-size: var(--rem_12);
 }
 
 header .logo h1{
-    margin: 0;
+    margin: var(--margin_0);
 }
 
 header .nav1 ul{
@@ -76,7 +114,7 @@ header .nav1 ul{
 }
 
 header .nav1 ul li{
-    margin-left: 2rem;
+    margin-left: var(--rem_2);
 }
 
 
@@ -94,7 +132,7 @@ header .nav2 ul{
 }
 
 header .nav2 ul li{
-    margin-right: 1.5rem;
+    margin-right: var(--rem_15);
 }
 
 
@@ -107,47 +145,48 @@ header a:hover{
   display: flex;
   flex-direction: row;
   grid-area: food_recipe_main;
-  margin-top: 3rem;
+  margin-top: var(--rem_3);
+  justify-content: center;
+ 
 }
 .food_recipe_main iframe{
-  border-radius: 12px;
-  width: 40%;
+  border-radius: var(--border_radius12);
+  width: var(--per_40);
   height: auto;
-  padding-right: 1rem;
-  padding-left: 5rem;
+  padding: var(--padding2);
 }
 
 .food_recipe_main .container{
   grid-area: food_recipe_details;
-  padding: 0 4rem 0 4rem;
+  padding: var(--padding3);
   font-family: Inter;
   background-color: white;
-  border-radius: 12px;
+  border-radius: var(--border_radius12);
   box-shadow: var(--background-blur);
-  width: 35%;
+  width: var(--per_35);
   height: auto;
-  margin-right: 6rem;
+  margin-left: var(--rem_3);
 
 } 
 .button1{
-  border-radius: 12px;
+  border-radius: var(--border_radius12);
   border: var(--green);
   background-color: var(--green);
   color: #fff;
-  padding: 6px;
-  width: 80px;
+  padding: var(--rem_0375);
+  width: var(--rem_5);
 }
 .button2{
-  border-radius: 12px;
+  border-radius: var(--border_radius12);
   border: var(--orange);
   background-color: var(--orange);
   color: #fff;
-  padding: 6px;
-  width: 80px;
+  padding: var(--rem_0375);
+  width: var(--rem_5);
 }
 .icons{
-  margin-left: 18rem;
-  margin-bottom: 1rem;
+  margin-left: var(--rem18);
+  margin-bottom: var(--rem_1);
   display: flex;
   flex-direction: row;
 }
@@ -156,58 +195,57 @@ header a:hover{
   grid-area: editor;
   display: flex;
   flex-direction: row;
-  padding: 1rem 1rem 1rem 5.5rem;
+  margin-left: var(--rem_5);
   font-family: Inter;
-  
 }
 .editor img{
-  padding-top: 20px;
+  padding-top: var(--rem_12);
 }
 .ingridents h3{
   font-family: Inter;
   align-self: stretch;
-  padding: 0 1rem 1rem 5.5rem;
+  padding: var(--padding4);
 }
 .ingridents ul{
   grid-area: ingridents;
-  margin: 1rem 0 0 8.5rem;
-  padding: 1rem 1rem 1rem 1.5rem;
+  margin: var(--margin_1);
+  padding: var(--padding5);
   font-family: Inter;
   background-color: white;
-  border-radius: 12px;
+  border-radius: var(--border_radius12);
   box-shadow: var(--background-blur);
   
 }
 .ingridents ul li{
-  margin-left: 2rem;
+  margin-left: var(--rem_2);
 }
 
 main{
   grid-area: main;
   font-family: Inter;
-  padding: 0  3rem 0 3rem;
+  padding: var(--padding);
 }
 
 .recipe_requiment{
   grid-area: recommend;
-  padding-left: 10%;
+  padding-left: var(--per_10);
   font-family: Inter;
   align-self: stretch;
-  padding: 1rem 1rem 1rem 5.5rem;
+  padding: var(--padding5);
   
 }
 .recipe_requiment img{
-  width: 20rem;
-  padding: 1rem 1rem 1rem 4rem;
-  width: 80%;
+  width: var(--rem_20);
+  padding: var(--padding6);
+  width: var(--per_80);
   height: auto;
 }
 .instruction img{
-  margin: 0 6rem 0 4rem;
-  padding: 1rem; 
-  width: 70%;
+  margin: var(--margin_2);
+  padding: var(--rem_1); 
+  width: var(--per_70);
   height: auto;
-  border-radius: 12px;
+  border-radius: var(--border_radius12);
 }
 .instruction{
 
@@ -216,15 +254,15 @@ main{
 .instruction p{
   font-family: Inter;
   background-color: white;
-  border-radius: 12px;
+  border-radius: var(--border_radius12);
   box-shadow: var(--background-blur);
-  padding: 1rem;
-  margin-bottom: 3rem;
+  padding: var(--rem_1);
+  margin-bottom: var(--rem_3);
 }
 footer{
     grid-area: footer;
-    margin: 0;
-    background-color: #069D47;
+    margin: var(--margin_0);
+    background-color: green;
     font-family: Philosopher;
 }
 
@@ -232,21 +270,21 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1rem 15rem 1rem 15rem;
+    padding: var(--footer_ul_padding)
 }
 
 footer a{
-    font-size: 0.8rem;
+    font-size: var(--footer_a_fontsize);
     text-decoration: none;
     color: white;
 }
 
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: var(--margin_0);
+    padding: var(--margin_0);
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1024px){
   body{
       grid-template-columns: 1fr;
       grid-template-rows: 0.4fr 1fr 1fr 0.2fr 2fr 3fr 1fr 0.4fr;
@@ -262,20 +300,20 @@ ul{
   }
   .recipe_requiment{
     grid-area: recommend;
-    padding-left: 10%;
+    padding-left: var(--per_10);
     font-family: Inter;
     align-self: stretch;
-    padding: 0  0 0 6rem;
+    padding-right: var(--rem_6);
     
   }
   .recipe_requiment img{
-    width: 40%;
+    width: var(--per_40);
     height: auto;
-    padding: 1rem 1rem 1rem 3rem;
+    padding: var(--padding6);
   }
   .instruction_set{
     grid-area: main;
-    padding: 0 3rem 0 6rem;
+    padding: var(--padding7);
     font-family: Inter;
     align-self: stretch;
   } 
