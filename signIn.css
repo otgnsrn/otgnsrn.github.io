@@ -3,6 +3,33 @@
     --dark-green: #002F15;
     --orange: #f15e23;
     --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
+    --grid_height: 100vh;
+    --grid_row_1: 1fr;
+    --grid_row_01: 0.1fr;
+    --margin_0: 0;
+    --margin_header: 0 1rem 0 1rem;
+    --header_a_fontsize: 1.313rem;
+    --rem_025: 0.25rem;
+    --rem_15625: 15.625rem;
+    --rem_1: 1rem;
+    --rem_12: 1.2rem;
+    --rem_15: 1.5rem;
+    --rem_2: 2rem;
+    --rem_13: 13rem;
+    --rem_32: 3.2rem;
+    --rem_5: 5rem;
+    --rem_177: 17.7rem; 
+    --per_100: 100%;
+    --padding1: 1rem 4rem 2rem 4rem;
+    --margin_1: 0 0 2rem 0;
+    --border_radius12: 12px;
+    --border_radius25: 25px;
+    --border_radius35: 35px;
+    --border_1: 1px solid #868686;
+    --font_w500: 500;
+    --font_w600: 600;
+    --footer_ul_padding: 1rem 15rem 1rem 15rem;
+    --footer_a_fontsize: 0.8rem;
 }
 @font-face {
   font-family: Shrikhand;
@@ -21,14 +48,14 @@
 
 body{
     display: grid;
-    height: 100vh;
+    height: var(--grid_height);
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 0.1fr max-content 0.1fr;
     grid-template-areas: 
         "header header"
         "img main" 
         "footer footer";
-    margin: 0;
+    margin: var(--margin_0);
 }
 
 header{
@@ -36,7 +63,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 1rem 0 1rem;
+    margin: var(--margin_header);
 }
 
 header nav{
@@ -47,12 +74,11 @@ header .logo{
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    /*font-size: 1.2rem;*/
-    
+    font-size: var(--rem_12);
 }
 
 header .logo h1{
-    margin: 0;
+    margin: var(--margin_0);
 }
 
 header a{
@@ -60,7 +86,7 @@ header a{
     color: var(--dark-green);
     font-family: Philosopher;
     font-weight: bold;
-    font-size: 1.313rem;
+    font-size: var(--header_a_fontsize);
 }
 
 header a:hover{
@@ -80,15 +106,15 @@ main h2{
     color: var(--dark-green);
     font-family: Philosopher;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: var(--rem_15);
     text-align: center;
-    /*font-size: 2rem;*/
+    font-size: var(--rem_2);
 }
 
 main h2 b{
     color: var(--dark-green);
     font-family: Shrikhand;
-    font-size: 2rem;
+    font-size: var(--rem_2);
 }
 main div p{
     text-align: center;
@@ -96,34 +122,34 @@ main div p{
 
 
 main img{
-    width: 100%;
+    width: var(--per_100);
     grid-area: img;
     height: auto;
 }
 main div.formm{
-    padding: 1rem 4rem 2rem 4rem ;
-    margin: 0 0 2rem 0 ;
+    padding: --padding1;
+    margin: var(--margin_1);
     grid-area: main;
     background-color: white;
-    border-radius: 12px;
+    border-radius: var(--border_radius12);
     box-shadow: var(--background-blur);
 }
 main div form input{
     background-color: white;
-    border-radius: 25px;
-    border: 1px solid #868686;
-    padding: 15px;
-    margin: 4px;
-    width: 250px;
+    border-radius: var(--border_radius25);
+    border: var(--border_1);
+    padding: var(--rem_1);
+    margin: var(--rem_025);
+    width: var(--rem_15625);
 }
 .connection{
     background-color: white;
-    border-radius: 25px;
-    border: 1px solid #868686;
-    padding: 15px;
-    margin: 4px;
-    width: 250px;
-    height: 1rem;
+    border-radius: var(--border_radius25);
+    border: var(--border_1);
+    padding: var(--rem_1);
+    margin: var(--rem_025);
+    width: var(--rem_15625);
+    height: var(--rem_1);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -131,45 +157,45 @@ main div form input{
 
 }
 .connection img{
-    height: 1.5rem;
-    width: 1.5rem;
+    height: var(--rem_15);
+    width: var(--rem_15);
 }
 main div form button{
     background-color: var(--green);
     color: white;
-    font-size: 1.375rem;
+    font-size: var(--header_a_fontsize);
     font-style: var(--dark-green);
 
     border-color: var(--green);
     border-style: solid;
-    border-radius: 35px;
+    border-radius: var(--border_radius35);
 
-    width: 13rem;
-    height: 3.2rem;
+    width: var(--rem_13);
+    height: var(--rem_32);
 
     align-items: center;
-    margin: 5px;
-    width: 283px;
+    margin: var(--rem_025);
+    width: var(--rem_177);
     
 }
 main div form button:hover{
     background-color: var(--orange);
     color: white;
-    font-size: 1.375rem;
+    font-size: var(--header_a_fontsize);
     font-style: var(--dark-green);
 
     border-color: var(--orange);
     border-style: solid;
-    border-radius: 35px;
+    border-radius: var(--border_radius35);
 
-    width: 13rem;
-    height: 3.2rem;
+    width: var(--rem_13);
+    height: var(--rem_32);
 
     align-items: center;
-    margin: 5px;
-    width: 283px;
-    
+    margin: var(--rem_025);
+    width: var(--rem_177);
 }
+
 main div form button a{
     color: white;
 }
@@ -183,11 +209,11 @@ main .formm .connection{
     font-family: Inter;
     font-size: 18px;
     color: var(--dark-green);
-    font-weight: 500;
+    font-weight: var(--font_w500);
 }
 
 main form label{
-    font-weight: 600;
+    font-weight: var(--font_w600);
     font-size: 17px;
     color: var(--dark-green);
     font-family: Inter;
@@ -195,8 +221,8 @@ main form label{
 
 footer{
     grid-area: footer;
-    margin: 0;
-    background-color: #069D47;
+    margin: var(--margin_0);
+    background-color:--green;
     font-family: Philosopher;
 }
 
@@ -204,11 +230,11 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1rem 15rem 1rem 15rem;
+    padding: var(--footer_ul_padding)
 }
 
 footer a{
-    font-size: 0.8rem;
+    font-size: var(--footer_a_fontsize);
     text-decoration: none;
     color: white;
 }
