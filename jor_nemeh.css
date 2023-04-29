@@ -5,6 +5,31 @@
     --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
     --form-input-border: 1px solid var(--gray);
     --button-border: 3px solid var(--green);
+    --grid_height: 100vh;
+    --grid_row_1: 1fr;
+    --grid_row_01: 0.1fr;
+    --margin_0: 0;
+    --margin_header: 0 1rem 0 1rem;
+    --header_a_fontsize: 1.313rem;
+    --rem_05: 0.5rem;
+    --rem_07: 0.7rem;
+    --rem_1: 1rem;
+    --rem_3: 3rem;
+    --rem_12: 1.2rem;
+    --rem_2: 2rem;
+    --rem_10: 10rem;
+    --rem_15: 1.5rem;
+    --rem_7: 7rem;
+    --rem_17: 17rem;
+    --per_60: 60%;
+    --per_70: 70%;
+    --per_100: 100%;
+    --rem_5: 5rem;
+    --padding1: 1rem 2rem 2rem 2rem;
+    --border_radius12: 12px;
+    --footer_ul_padding: 1rem 15rem 1rem 15rem;
+    --footer_a_fontsize: 0.8rem;
+
 }
 
 @font-face {
@@ -24,7 +49,7 @@
 
 body{
     display: grid;
-    height: 100vh;
+    height: var(--grid_height);
     grid-template-columns: 4fr 6fr;
     grid-template-rows: 0.1fr 1fr 0.1fr 8.7fr 0.1fr;
     grid-template-areas: 
@@ -41,7 +66,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 1rem 0 1rem;
+    margin: var(--margin_header);
 }
 
 header a{
@@ -49,7 +74,7 @@ header a{
     color: var(--dark-green);
     font-family: Philosopher;
     font-weight: bold;
-    font-size: 1.313rem;
+    font-size: var(--header_a_fontsize);
 }
 header .nav1{
     display: flex;
@@ -61,11 +86,11 @@ header .nav1 .logo{
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: 1.2rem;
+    font-size: var(--rem_12);
 }
 
 header .logo h1{
-    margin: 0;
+    margin: var(--margin_0);
 }
 
 header .nav1 ul{
@@ -75,7 +100,7 @@ header .nav1 ul{
 }
 
 header .nav1 ul li{
-    margin-left: 2rem;
+    margin-left: var(--rem_2);
 }
 
 header .nav2{
@@ -92,7 +117,7 @@ header .nav2 ul{
 }
 
 header .nav2 ul li{
-    margin-right: 1.5rem;
+    margin-right: var(--rem_15);
 }
 
 
@@ -117,30 +142,28 @@ header a:hover{
 
 .h2_jornemeh{
     grid-area: h2;
-    margin-left: 7rem;
+    margin-left: var(--rem_7);
     font-family: Philosopher;
 }
 
 .jor_nemeh{
     grid-area: section;
-    margin-left: 7rem;
-    width: 17rem;
-    height: 17rem;
+    margin-left: var(--rem_7);
+    width: var(--rem_17);
+    height: var(--rem_17);
     justify-items: center;
     text-align: center;
     background-color: var(--gray);
-    opacity: 60%;
+    opacity: var(--per_60);
     font-family: Inter;
-    font-size: 0.7rem;
+    font-size: var(--rem_07);
 }
-
-
 
 main{
     grid-area: main;
     margin-bottom: 5rem;
-    padding: 1rem 2rem 2rem 2rem;
-    width: 70%;
+    padding: --padding1;
+    width: var(--per_70);
     height: auto;
     box-shadow: var(--background-blur);
     align-self: stretch;
@@ -158,61 +181,61 @@ main form label{
 }
 
 main form input{
-    margin-top: 0.5rem;
+    margin-top: var(--rem_05);
     border: var(--form-input-border);
-    height: 2rem;
+    height: var(--rem_2);
 }
 
 main form select{
-    margin-top: 0.5rem;
+    margin-top: var(--rem_05);
     border: var(--form-input-border);
-    height: 2rem;
-    width: 10rem;
+    height: var(--rem_2);
+    width: var(--rem_10);
 }
 
 main .zaawar_oruulah{
-    margin-top: 2rem;
+    margin-top: var(--rem_2);
     display: flex;
     justify-content: flex-start;
 }
 
 main .zaawar_oruulah input{
-    margin-left: 1rem;
+    margin-left: var(--rem_1);
     border: var(--form-input-border);
-    height: 2rem;
-    width: 100%;
+    height: var(--rem_2);
+    width: var(--per_100);
 }
 
 main .buttons{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 10rem;
+    margin-top: var(--rem_10);
 }
 
 main .buttons .cancel{
-    width: 7rem;
-    height: 2rem;
+    width: var(--rem_7);
+    height: var(--rem_2);
     background-color: white;
     border: var(--button-border);
-    border-radius: 10px;
+    border-radius: var(--border_radius12);
     color: var(--green);
 }
 
 main .buttons .save{
-    margin-left: 1rem;
-    width: 7rem;
-    height: 2rem;
+    margin-left: var(--rem_1);
+    width: var(--rem_7);
+    height: var(--rem_2);
     background-color: var(--green);
     border: none;
-    border-radius: 10px;
+    border-radius: var(--border_radius12);
     color: white;
 }
 
 footer{
     grid-area: footer;
-    margin: 0;
-    background-color: #069D47;
+    margin: var(--margin_0);
+    background-color: var(--green);
     font-family: Philosopher;
 }
 
@@ -220,19 +243,19 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1rem 15rem 1rem 15rem;
+    padding: var(--footer_ul_padding);
 }
 
 footer a{
-    font-size: 0.8rem;
+    font-size: var(--footer_a_fontsize);
     text-decoration: none;
     color: white;
 }
 
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: var(--margin_0);
+    padding: var(--margin_0);
 }
 
 @media only screen and (max-width: 900px){
