@@ -10,6 +10,32 @@
     --img-border-radius: 5px;
     --blur-border-radius: 12px;
     --category-radius: 90px;
+    --grid_height: 100vh;
+    --grid_row_1: 1fr;
+    --grid_row_01: 0.1fr;
+    --margin_0: 0;
+    --margin_header: 0 1rem 0 1rem;
+    --header_a_fontsize: 1.313rem;
+    --rem_03: 0.3rem;
+    --rem_05: 0.5rem;
+    --rem_1: 1rem;
+    --rem_2: 2rem;
+    --rem_3: 3rem;
+    --rem_4: 4rem;
+    --rem_5: 5rem;
+    --rem_10: 10rem;
+    --rem_30: 30rem;
+    --rem_35: 35rem;
+    --rem_50: 50rem;
+    --rem_7: 7rem;
+    --rem_10: 10rem;
+    --rem_15: 15rem;
+    --rem_23: 23rem;
+    --rem_25: 2.5rem;
+    --border_radius12: 12px;
+    --per_85: 85%;
+    --footer_ul_padding: 1rem 15rem 1rem 15rem;
+    --footer_a_fontsize: 0.8rem;
 }
 
 @font-face {
@@ -29,7 +55,7 @@
 
 body{
     display: grid;
-    height: 100vh;
+    height: var(--grid_height);
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 0.1fr 1fr 8.8fr 0.1fr;
     grid-template-areas: 
@@ -44,7 +70,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 1rem 0 1rem;
+    margin: var(--margin_header)
 }
 
 header a{
@@ -52,7 +78,7 @@ header a{
     color: var(--dark-green);
     font-family: Philosopher;
     font-weight: bold;
-    font-size: 1.313rem;
+    font-size: var(--header_a_fontsize);
 }
 header .nav1{
     display: flex;
@@ -64,11 +90,11 @@ header .nav1 .logo{
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: 1.2rem;
+    font-size: --rem;
 }
 
 header .logo h1{
-    margin: 0;
+    margin: var(--margin_0);
 }
 
 header .nav1 ul{
@@ -78,7 +104,7 @@ header .nav1 ul{
 }
 
 header .nav1 ul li{
-    margin-left: 2rem;
+    margin-left: var(--rem_2);
 }
 
 header .nav2{
@@ -95,7 +121,7 @@ header .nav2 ul{
 }
 
 header .nav2 ul li{
-    margin-right: 1.5rem;
+    margin-right: var(--main-h2-size);
 }
 
 header a:hover{
@@ -104,8 +130,8 @@ header a:hover{
 
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: var(--margin_0);
+    padding: var(--margin_0);
 }
 
 .main_cover{
@@ -114,7 +140,7 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: var(--rem_2);
 }
 
 .main_cover_details{
@@ -130,16 +156,15 @@ ul{
 }
 
 .main_cover_details p{
-    
-    width: 30rem;
+    width: var(--rem30);
 }
 
 button{
-    width: 7rem;
-    height: 2rem;
+    width: var(--rem_7);
+    height: var(--rem_2);
     background-color: white;
     border: var(--button-border);
-    border-radius: 10px;
+    border-radius: var(--border_radius12);
     color: var(--green);
 }
 
@@ -152,13 +177,13 @@ main{
 }
 
 main h2{
-    margin-right: 50rem;
+    margin-right: var(--rem_50);
     font-size: var(--main-h2-size);
     font-family: Inter;
 }
 
 .main_best button{
-    margin-left: 51rem;
+    margin-left: var(--rem_50);
 }
 
 .main_boxes{
@@ -168,9 +193,9 @@ main h2{
 }
 
 .main_box img{
-    width: 10rem;
-    height: 10rem;
-    margin-right: 1.5rem;
+    width: var(--rem_10);
+    height: var(--rem_10);
+    margin-right: var(--main-h2-size);
     border-radius: var(--img-border-radius);
 }
 
@@ -178,39 +203,39 @@ main h2{
     display: flex;
     flex-direction: row;
     width: fit-content;
-    padding: 2rem;
+    padding: var(--rem_2);
     box-shadow: var(--background-blur);
     border-radius: var(--blur-border-radius);
 }
 
 #hoolniiZurag{
-    width: 15rem;
-    height: 15rem;
+    width: var(--rem_15);
+    height: var(--rem_15);
     border-radius: var(--img-border-radius);
 }
 
 .editor{
     display: flex;
     flex-direction: row;
-    margin-top: 2.5rem;
+    margin-top: var(--rem_25);
 }
 
 #profile{
-    width: 3rem;
-    height: 3rem;
+    width: var(--rem_3);
+    height: var(--rem_3);
 }
 
 .main_recommend_details{
-    margin-left: 4rem;
-    width: 35rem;
+    margin-left: var(--rem_4);
+    width: var(--rem_35);
     
 }
 
 #category{
     width: fit-content;
     height: auto;
-    padding: 0.3rem;
-    margin-right: 0.5rem;
+    padding: var(--rem_03);
+    margin-right: var(--rem_05);
     background-color: var(--green);
     border-radius: var(--category-radius);
     color: white;
@@ -223,20 +248,20 @@ main h2{
 }
 
 .main_advice_box{
-    margin-right: 4rem;
+    margin-right: var(--rem_4);
 }
 
 .main_advice img{
     width: 25rem;
-    height: 15rem;
+    height: var(--rem_15);
     border-radius: var(--img-border-radius);
 }
 
 .main_advice_details{
     box-shadow: var(--background-blur);
     border-radius: var(--blur-border-radius);
-    width: 23rem;
-    padding: 1rem;
+    width: var(--rem_23);
+    padding: var(--rem_1);
 }
 
 .categories{
@@ -248,20 +273,20 @@ main h2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 85%;
+    width: var(--per_85);
 }
 
 .main_latest img{
-    width: 10rem;
-    height: 10rem;
-    margin: 0.5rem;
+    width: var(--rem_10);
+    height: var(--rem_10);
+    margin: var(--rem_05);
     border-radius: var(--img-border-radius);
 }
 
 footer{
     grid-area: footer;
-    margin-top: 5rem;
-    background-color: #069D47;
+    margin-top: var(--rem_5);
+    background-color: var(--green);
     font-family: Philosopher;
 }
 
@@ -269,11 +294,11 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1rem 15rem 1rem 15rem;
+    padding: var(--footer_ul_padding);
 }
 
 footer a{
-    font-size: 0.8rem;
+    font-size: var(--footer_a_fontsize);
     text-decoration: none;
     color: white;
 }
