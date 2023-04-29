@@ -74,7 +74,6 @@ header .logo{
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: var(--rem_12);
 }
 
 header .logo h1{
