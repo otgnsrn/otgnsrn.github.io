@@ -129,7 +129,7 @@ main img{
 
     font-family: Philosopher;
     font-size: var(--rem_12);
-    font-style: var(--dark-green);
+    color: var(--dark-green);
 
     border-color: var(--gray);
     border-style: solid;
