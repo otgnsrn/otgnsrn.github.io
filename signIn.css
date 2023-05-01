@@ -126,7 +126,7 @@ main img{
     height: auto;
 }
 main div.formm{
-    padding: --padding1;
+    padding: var(--padding1);
     margin: var(--margin_1);
     grid-area: main;
     background-color: white;
@@ -163,7 +163,7 @@ main div form button{
     background-color: var(--green);
     color: white;
     font-size: var(--header_a_fontsize);
-    font-style: var(--dark-green);
+    color: var(--dark-green);
 
     border-color: var(--green);
     border-style: solid;
@@ -181,7 +181,7 @@ main div form button:hover{
     background-color: var(--orange);
     color: white;
     font-size: var(--header_a_fontsize);
-    font-style: var(--dark-green);
+    color: var(--dark-green);
 
     border-color: var(--orange);
     border-style: solid;
