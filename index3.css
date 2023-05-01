@@ -5,6 +5,7 @@
     --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
     --form-input-border: 1px solid var(--gray);
     --button-border: 3px solid var(--green);
+    --button-border1: 2px solid var(--green);
     --cover-h2-size: 2rem;
     --main-h2-size: 1.5rem;
     --img-border-radius: 5px;
@@ -132,7 +133,58 @@ ul{
     margin: var(--margin_0);
     padding: var(--margin_0);
 }
+.search{
+    
+    background: var(--green);
+    height: 2.3rem;
+    border-radius: 40px;
 
+}
+
+.search:hover > .search-txt{
+    width: 240px;
+}
+
+.search:hover > .search-btn{
+    background: white;
+
+    
+}
+
+.search-btn{
+    color: var(--dark-green);
+    border: var(--button-border1);
+    float: right;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    float:left;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    transition: 0.2s;
+    line-height:40px;
+    width: 0;
+}
+input::placeholder{
+    color: white;
+    font-family: Shrikhand;
+    font-weight: 600;
+    opacity: 0.9;
+    font-size: 17px;
+}
 .main_cover{
     grid-area: cover;
     position: relative;
