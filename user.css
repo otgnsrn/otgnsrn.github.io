@@ -230,7 +230,7 @@ aside h2{
 footer{
     grid-area: footer;
     margin: var(--margin_0);
-    background-color: --green;
+    background-color: var(--green);
     font-family: Philosopher;
 }
 
