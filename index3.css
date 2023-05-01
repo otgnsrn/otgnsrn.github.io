@@ -90,7 +90,7 @@ header .nav1 .logo{
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: --rem;
+    font-size: var(--rem_1);;
 }
 
 header .logo h1{
