@@ -162,7 +162,7 @@ header a:hover{
 main{
     grid-area: main;
     margin-bottom: 5rem;
-    padding: --padding1;
+    padding: var(--padding1);
     width: var(--per_70);
     height: auto;
     box-shadow: var(--background-blur);
