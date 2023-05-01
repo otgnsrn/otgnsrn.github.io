@@ -125,6 +125,59 @@ header a:hover{
     color: var(--green);
 }
 
+.search{
+    
+    background: var(--green);
+    height: 2.2rem;
+    border-radius: 40px;
+
+}
+
+.search:hover > .search-txt{
+    width: 240px;
+}
+
+.search:hover > .search-btn{
+    background: white;
+
+    
+}
+
+.search-btn{
+    color: var(--dark-green);
+    border: var(--button-border1);
+    float: right;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    float:left;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    transition: 0.2s;
+    line-height:40px;
+    width: 0;
+}
+input::placeholder{
+    color: white;
+    font-family: Shrikhand;
+    font-weight: 600;
+    opacity: 0.9;
+    font-size: 17px;
+}
+
 .user_cover{
     grid-area: cover;
     position: relative;
