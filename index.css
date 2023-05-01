@@ -37,7 +37,7 @@ body{
     display: grid;
     height: var(--grid_height);
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: --var(--grid_row_01) max-content 0.var(--grid_row_01);
+    grid-template-rows: 0.1fr max-content 0.1fr;
     grid-template-areas: 
         "header header"
         "main main" 
