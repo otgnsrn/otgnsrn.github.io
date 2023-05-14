@@ -8,7 +8,7 @@ http.onload = function () {
         let output = "";
         for (let item of hool) {
             output += `
-            <div class="box"             onclick = "window.location.href = 'index2.html';" >
+            <div class="box" onclick = "window.location.href = 'index2.html';" >
             <img src="${item.image}" alt= "${item.image}"
             />
             <div class="box_description">
