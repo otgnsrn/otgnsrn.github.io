@@ -1,11 +1,12 @@
 :root{
     --green: #069D47;
+    --mid_green: #04672F;
     --dark-green: #002F15;
     --gray: hsl(0, 0%, 75%);
     --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
     --form-input-border: 1px solid var(--gray);
-    --button-border: 3px solid var(--green);
-    --button-border1: 2px solid var(--green);
+    --button-border: 3px solid var(--mid_green);
+    --button-border1: 2px solid var(--mid_green);
     --cover-h2-size: 2rem;
     --main-h2-size: 1.5rem;
     --img-border-radius: 5px;
@@ -41,16 +42,19 @@
 @font-face {
     font-family: Shrikhand;
     src: url(./fonts/Shrikhand-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Philosopher;
     src: url(./fonts/Philosopher-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Inter;
     src: url(./fonts/Inter-Regular.ttf);
+    font-display: swap;
 }
 
 body{
@@ -136,7 +140,7 @@ ul{
 .search{
     
     background: var(--green);
-    height: 2.3rem;
+    height: 2.2rem;
     border-radius: 40px;
 
 }
@@ -244,8 +248,8 @@ main h2{
 }
 
 .main_box img{
-    width: var(--rem_10);
-    height: var(--rem_10);
+    width: 10rem;
+    height: auto;
     margin-right: var(--main-h2-size);
     border-radius: var(--img-border-radius);
 }
@@ -287,7 +291,7 @@ main h2{
     height: auto;
     padding: var(--rem_03);
     margin-right: var(--rem_05);
-    background-color: var(--green);
+    background-color: var(--mid_green);
     border-radius: var(--category-radius);
     color: white;
     text-align: center;
@@ -337,7 +341,7 @@ main h2{
 footer{
     grid-area: footer;
     margin-top: var(--rem_5);
-    background-color: var(--green);
+    background-color: var(--mid_green);
     font-family: Philosopher;
 }
 

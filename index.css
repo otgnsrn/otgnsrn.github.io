@@ -20,17 +20,18 @@
     --border_radius35: 35px;
     --footer_ul_padding: 1rem 15rem 1rem 15rem;
     --footer_a_fontsize: 0.8rem;
-    --screen_max_width: 1024px;
 }
 
 @font-face {
     font-family: Shrikhand;
     src: url(./fonts/Shrikhand-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Philosopher;
     src: url(./fonts/Philosopher-Regular.ttf);
+    font-display: swap;
 }
 
 body{
@@ -181,6 +182,10 @@ ul{
             "header"
             "main"
             "footer";
+    }
+
+    main img{
+        display: none;
     }
 }
 
