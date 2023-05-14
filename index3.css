@@ -42,16 +42,19 @@
 @font-face {
     font-family: Shrikhand;
     src: url(./fonts/Shrikhand-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Philosopher;
     src: url(./fonts/Philosopher-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Inter;
     src: url(./fonts/Inter-Regular.ttf);
+    font-display: swap;
 }
 
 body{

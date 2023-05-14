@@ -1,10 +1,11 @@
 :root{
     --green: #069D47;
+    --mid_green: #04672F;
     --dark-green: #002F15;
     --gray: hsl(0, 0%, 75%);
     --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
     --form-input-border: 1px solid var(--gray);
-    --button-border: 3px solid var(--green);
+    --button-border: 3px solid var(--mid_green);
     --grid_height: 100vh;
     --grid_row_1: 1fr;
     --grid_row_01: 0.1fr;
@@ -35,16 +36,19 @@
 @font-face {
     font-family: Shrikhand;
     src: url(./fonts/Shrikhand-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Philosopher;
     src: url(./fonts/Philosopher-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: Inter;
     src: url(./fonts/Inter-Regular.ttf);
+    font-display: swap;
 }
 
 body{
@@ -139,8 +143,6 @@ header a:hover{
 
 .search:hover > .search-btn{
     background: white;
-
-    
 }
 
 .search-btn{
@@ -279,7 +281,7 @@ main .buttons .save{
     margin-left: var(--rem_1);
     width: var(--rem_7);
     height: var(--rem_2);
-    background-color: var(--green);
+    background-color: var(--mid_green);
     border: none;
     border-radius: var(--border_radius12);
     color: white;
@@ -288,7 +290,7 @@ main .buttons .save{
 footer{
     grid-area: footer;
     margin: var(--margin_0);
-    background-color: var(--green);
+    background-color: var(--mid_green);
     font-family: Philosopher;
 }
 
