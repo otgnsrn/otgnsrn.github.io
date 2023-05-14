@@ -245,8 +245,8 @@ main h2{
 }
 
 .main_box img{
-    width: var(--rem_10);
-    height: var(--rem_10);
+    width: 10rem;
+    height: auto;
     margin-right: var(--main-h2-size);
     border-radius: var(--img-border-radius);
 }
