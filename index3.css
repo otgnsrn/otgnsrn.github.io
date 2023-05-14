@@ -1,5 +1,6 @@
 :root{
     --green: #069D47;
+    --mid_green: #04672F;
     --dark-green: #002F15;
     --gray: hsl(0, 0%, 75%);
     --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
@@ -287,7 +288,7 @@ main h2{
     height: auto;
     padding: var(--rem_03);
     margin-right: var(--rem_05);
-    background-color: var(--green);
+    background-color: var(--mid_green);
     border-radius: var(--category-radius);
     color: white;
     text-align: center;
@@ -337,7 +338,7 @@ main h2{
 footer{
     grid-area: footer;
     margin-top: var(--rem_5);
-    background-color: var(--green);
+    background-color: var(--mid_green);
     font-family: Philosopher;
 }
 
