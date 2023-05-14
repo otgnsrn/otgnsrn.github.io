@@ -224,7 +224,7 @@ input::placeholder{
   margin-left: var(--rem_3);
 
 } 
-.button1{
+.button{
   border-radius: var(--border_radius12);
   border: var(--green);
   background-color: var(--green);
@@ -232,7 +232,7 @@ input::placeholder{
   padding: var(--rem_0375);
   width: var(--rem_5);
 }
-.button2{
+.button:hover{
   border-radius: var(--border_radius12);
   border: var(--orange);
   background-color: var(--orange);
@@ -241,9 +241,9 @@ input::placeholder{
   width: var(--rem_5);
 }
 .icons{
-  margin-left: var(--rem18);
+  text-align: right;
+
   margin-bottom: var(--rem_1);
-  display: flex;
   flex-direction: row;
 }
 
