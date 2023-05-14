@@ -13,7 +13,7 @@
     --rem_15625: 15.625rem;
     --rem_1: 1rem;
     --rem_12: 1.2rem;
-    --rem_15: 1.5rem;
+    --rem_15: 2rem;
     --rem_2: 2rem;
     --rem_13: 13rem;
     --rem_32: 3.2rem;
@@ -22,6 +22,7 @@
     --per_100: 100%;
     --padding1: 1rem 4rem 2rem 4rem;
     --margin_1: 0 0 2rem 0;
+    --margin_2: 0 0.3rem 0 0;
     --border_radius12: 12px;
     --border_radius25: 25px;
     --border_radius35: 35px;
@@ -113,7 +114,7 @@ main h2{
 }
 
 main h2 b{
-    color: var(--dark-green);
+    color: var(--green);
     font-family: Shrikhand;
     font-size: var(--rem_2);
 }
@@ -161,7 +162,7 @@ main div form input{
 .connection img{
     height: var(--rem_15);
     width: var(--rem_15);
-    margin-right: var(--rem_025);
+    margin: var(--margin_2)
 }
 main div form button{
     background-color: var(--green);
@@ -198,8 +199,10 @@ main div form button:hover{
     margin: var(--rem_025);
     width: var(--rem_177);
 }
+
 main div form button a{
     color: white;
+    text-decoration: none;
 }
 footer{
     grid-area: footer;

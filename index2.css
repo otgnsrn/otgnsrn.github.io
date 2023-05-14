@@ -153,7 +153,6 @@ header a:hover{
   border-radius: var(--border_radius12);
   width: var(--per_40);
   height: auto;
-  padding: var(--padding2);
 }
 
 .food_recipe_main .container{
@@ -168,7 +167,7 @@ header a:hover{
   margin-left: var(--rem_3);
 
 } 
-.button1{
+.button{
   border-radius: var(--border_radius12);
   border: var(--green);
   background-color: var(--green);
@@ -176,7 +175,7 @@ header a:hover{
   padding: var(--rem_0375);
   width: var(--rem_5);
 }
-.button2{
+.button:hover{
   border-radius: var(--border_radius12);
   border: var(--orange);
   background-color: var(--orange);
@@ -185,9 +184,9 @@ header a:hover{
   width: var(--rem_5);
 }
 .icons{
-  margin-left: var(--rem18);
+  text-align: right;
+
   margin-bottom: var(--rem_1);
-  display: flex;
   flex-direction: row;
 }
 
