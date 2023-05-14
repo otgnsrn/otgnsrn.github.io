@@ -1,11 +1,11 @@
-class BestRecipe extends HTMLElement{
-    constructor(){
-        super();
-        this.innerHTML = `<h2>${this.getAttribute('name')}</h2>
+class BestRecipe extends HTMLElement {
+  constructor() {
+    super();
+    this.innerHTML = `<h2>${this.getAttribute('name')}</h2>
                         <section class="main_best">
                             <div class="main_boxes">
                                 <div class="main_box">
-                                <img
+                                <amp-img
                                     src="web/img1.webp"
                                     alt="Hoolnii zurag"
                                     
@@ -14,7 +14,7 @@ class BestRecipe extends HTMLElement{
                                 <p>Ангилал</p>
                                 </div>
                                 <div class="main_box">
-                                <img
+                                <amp-img
                                     src="web/img2.webp"
                                     alt="Hoolnii zurag"
                                 
@@ -23,7 +23,7 @@ class BestRecipe extends HTMLElement{
                                 <p>Ангилал</p>
                                 </div>
                                 <div class="main_box">
-                                <img
+                                <amp-img
                                     src="web/img3.webp"
                                     alt="Hoolnii zurag"
                                 
@@ -32,7 +32,7 @@ class BestRecipe extends HTMLElement{
                                 <p>Ангилал</p>
                                 </div>
                                 <div class="main_box">
-                                <img
+                                <amp-img
                                     src="web/img4.webp"
                                     alt="Hoolnii zurag"
                                     
@@ -41,7 +41,7 @@ class BestRecipe extends HTMLElement{
                                 <p>Ангилал</p>
                                 </div>
                                 <div class="main_box">
-                                <img
+                                <amp-img
                                     src="web/img5.webp"
                                     alt="Hoolnii zurag"
                                 
@@ -54,7 +54,7 @@ class BestRecipe extends HTMLElement{
                      </section>
                      <h2>Санал болгох</h2>
                         <section class="main_recommend">
-                            <img id="hoolniiZurag"
+                            <amp-img id="hoolniiZurag"
                                 src="web/img6.webp"
                                 alt="hoolni zurag"
                             
@@ -67,7 +67,7 @@ class BestRecipe extends HTMLElement{
                             </p>
                             <p id="category">#bakery</p>
                             <div class="editor">
-                                <img id="profile"
+                                <amp-img id="profile"
                                 src="web/profile4.webp"
                                 alt="profile picture"
                                 />
@@ -79,35 +79,35 @@ class BestRecipe extends HTMLElement{
     <section class="main_best">
       <div class="main_boxes">
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img7.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img9.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
@@ -120,35 +120,35 @@ class BestRecipe extends HTMLElement{
     <section class="main_best">
       <div class="main_boxes">
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img7.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img9.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
@@ -161,35 +161,35 @@ class BestRecipe extends HTMLElement{
     <section class="main_best">
       <div class="main_boxes">
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img7.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img9.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
@@ -202,35 +202,35 @@ class BestRecipe extends HTMLElement{
     <section class="main_best">
       <div class="main_boxes">
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img7.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img9.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
           <h3>Хоолны нэр</h3>
         </div>
         <div class="main_box">
-          <img
+          <amp-img
             src="web/img8.webp"
             alt="Hoolnii zurag"
           />
@@ -242,7 +242,7 @@ class BestRecipe extends HTMLElement{
     <h2>Зөвлөгөө</h2>
     <section class="main_advice">
         <div class="main_advice_box">
-          <img
+          <amp-img
             src="web/Rectangle 359.png"
             alt="chocolatenii zurag"
             
@@ -259,7 +259,7 @@ class BestRecipe extends HTMLElement{
         </div>
         </div>
         <div class="main_advice_box">
-          <img
+          <amp-img
             src="web/burrito.webp"
             alt="burritonii zurag"
             
@@ -276,8 +276,8 @@ class BestRecipe extends HTMLElement{
         </div>
         </div>
     </section>`
-                                ;
-    }
+      ;
+  }
 }
 
 window.customElements.define('best-recipe', BestRecipe);
