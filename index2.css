@@ -209,7 +209,6 @@ input::placeholder{
   border-radius: var(--border_radius12);
   width: var(--per_40);
   height: auto;
-  padding: var(--padding2);
 }
 
 .food_recipe_main .container{
