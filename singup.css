@@ -13,7 +13,7 @@
     --rem_15625: 15.625rem;
     --rem_1: 1rem;
     --rem_12: 1.2rem;
-    --rem_15: 1.5rem;
+    --rem_15: 2rem;
     --rem_2: 2rem;
     --rem_13: 13rem;
     --rem_32: 3.2rem;
@@ -22,6 +22,8 @@
     --per_100: 100%;
     --padding1: 1rem 4rem 2rem 4rem;
     --margin_1: 0 0 2rem 0;
+    --margin_2: 0 0.3rem 0 0;
+    --margin_3: 3rem 15rem 7rem 15rem;
     --border_radius12: 12px;
     --border_radius25: 25px;
     --border_radius35: 35px;
@@ -48,17 +50,16 @@
   src: url(./fonts/Inter-Regular.ttf);
   font-display: swap;
 }
-
 body{
     display: grid;
     height: var(--grid_height);
-    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 0.1fr max-content 0.1fr;
     grid-template-areas: 
         "header header"
         "img main" 
         "footer footer";
-    margin: 0;
+    margin: var(--margin_0);
 }
 
 header{
@@ -66,7 +67,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:  var(--margin_header);
+    margin: var(--margin_header);
 }
 
 header nav{
@@ -77,8 +78,6 @@ header .logo{
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: var(--rem_12);
-    
 }
 
 header .logo h1{
@@ -116,16 +115,13 @@ main h2{
 }
 
 main h2 b{
-    color: var(--dark-green);
+    color: var(--green);
     font-family: Shrikhand;
     font-size: var(--rem_2);
 }
 main div p{
     text-align: center;
-    font-family: Philosopher;
 }
-
-
 main img{
     width: var(--per_100);
     grid-area: img;
@@ -164,7 +160,7 @@ main div form input{
 .connection img{
     height: var(--rem_15);
     width: var(--rem_15);
-    margin-right: var(--rem_025);
+    margin: var(--margin_2)
 }
 main div form button{
     background-color: var(--green);
@@ -201,8 +197,10 @@ main div form button:hover{
     margin: var(--rem_025);
     width: var(--rem_177);
 }
+
 main div form button a{
     color: white;
+    text-decoration: none;
 }
 footer{
     grid-area: footer;
@@ -226,4 +224,27 @@ footer a{
 
 footer ul{
     list-style-type: none;
+}
+@media only screen and (max-width: 1024px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+    }
+    main img{
+        display: none;
+    }
+    main div.formm{
+        inset-block: none;
+        padding: var(--padding1);
+        margin: var(--margin_3);
+        grid-area: main;
+        background-color: white;
+        border-radius: var(--border_radius12);
+        box-shadow: var(--background-blur);
+    }
+    
 }
