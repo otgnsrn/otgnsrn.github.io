@@ -81,9 +81,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: var(--margin_0);  
-    padding: var(--padding);
-
+    margin: var(--margin_header)
 }
 
 header a{
@@ -103,7 +101,7 @@ header .nav1 .logo{
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: var(--rem_12);
+    font-size: var(--rem_1);;
 }
 
 header .logo h1{
@@ -120,7 +118,6 @@ header .nav1 ul li{
     margin-left: var(--rem_2);
 }
 
-
 header .nav2{
     display: flex;
     flex-direction: row;
@@ -135,65 +132,69 @@ header .nav2 ul{
 }
 
 header .nav2 ul li{
-    margin-right: var(--rem_15);
+    margin-right: var(--main-h2-size);
 }
-
 
 header a:hover{
     color: var(--green);
 }
 
+ul{
+    list-style-type: none;
+    margin: var(--margin_0);
+    padding: var(--margin_0);
+}
 .search{
     
-  background: var(--green);
-  height: 2.2rem;
-  border-radius: 40px;
+    background: var(--green);
+    height: 2.2rem;
+    border-radius: 40px;
 
 }
 
 .search:hover > .search-txt{
-  width: 240px;
+    width: 240px;
 }
 
 .search:hover > .search-btn{
-  background: white;
+    background: white;
 
-  
+    
 }
 
 .search-btn{
-  color: var(--dark-green);
-  border: var(--button-border1);
-  float: right;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 2rem;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
+    color: var(--dark-green);
+    border: var(--button-border1);
+    float: right;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
 }
 
 .search-txt{
-  border:none;
-  background: none;
-  outline: none;
-  float:left;
-  padding: 0;
-  text-align: center;
-  color: white;
-  font-size: 16px;
-  transition: 0.2s;
-  line-height:40px;
-  width: 0;
+    border:none;
+    background: none;
+    outline: none;
+    float:left;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    transition: 0.2s;
+    line-height:40px;
+    width: 0;
 }
 input::placeholder{
-  color: white;
-  font-family: Shrikhand;
-  font-weight: 600;
-  opacity: 0.9;
-  font-size: 17px;
+    color: white;
+    font-family: Shrikhand;
+    font-weight: 600;
+    opacity: 0.9;
+    font-size: 17px;
 }
 
 .food_recipe_main{
