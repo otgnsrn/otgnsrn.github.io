@@ -1,10 +1,11 @@
 :root{
     --green: #069D47;
+    --mid_green: #04672F;
     --dark-green: #002F15;
     --gray: hsl(0, 0%, 75%);
     --background-blur: 0 0 4px 2px rgb(0 0 0 / 0.1);
     --form-input-border: 1px solid var(--gray);
-    --button-border: 3px solid var(--green);
+    --button-border: 3px solid var(--mid_green);
     --cover-h2-size: 2rem;
     --main-h2-size: 1.5rem;
     --img-border-radius: 5px;
@@ -261,7 +262,7 @@ main h2{
 .foodCat{
     width: fit-content;
     padding: var(--rem_03);
-    background-color: var(--green);
+    background-color: var(--mid_green);
     color: white;
     border-radius: var(--category-radius);
 }
@@ -286,7 +287,7 @@ aside h2{
 footer{
     grid-area: footer;
     margin: var(--margin_0);
-    background-color: var(--green);
+    background-color: var(--mid_green);
     font-family: Philosopher;
 }
 
