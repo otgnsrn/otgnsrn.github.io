@@ -231,6 +231,12 @@ main{
     font-family: Inter;
 }
 
+main best-recipe{
+    margin-right: var(--rem_50);
+    font-size: var(--main-h2-size);
+    font-family: Inter;
+}
+
 main h2{
     margin-right: var(--rem_50);
     font-size: var(--main-h2-size);

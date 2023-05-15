@@ -114,7 +114,7 @@ main h2{
 }
 
 main h2 b{
-    color: var(--dark-green);
+    color: var(--green);
     font-family: Shrikhand;
     font-size: var(--rem_2);
 }
@@ -166,7 +166,7 @@ main div form button{
     background-color: var(--green);
     color: white;
     font-size: var(--header_a_fontsize);
-    color: var(--dark-green);
+    
 
     border-color: var(--green);
     border-style: solid;
@@ -184,7 +184,6 @@ main div form button:hover{
     background-color: var(--orange);
     color: white;
     font-size: var(--header_a_fontsize);
-    color: var(--dark-green);
 
     border-color: var(--orange);
     border-style: solid;
