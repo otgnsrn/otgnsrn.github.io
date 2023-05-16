@@ -26,6 +26,7 @@
     --rem_4: 4rem;
     --rem_5: 5rem;
     --rem_10: 12rem;
+    --rem_20: 20rem;
     --rem_30: 30rem;
     --rem_35: 35rem;
     --rem_50: 50rem;
@@ -211,7 +212,7 @@ input::placeholder{
 }
 
 .main_cover_details p{
-    width: var(--rem30);
+    width: 26rem;
 }
 
 button{
