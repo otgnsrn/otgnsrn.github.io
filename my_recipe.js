@@ -8,7 +8,7 @@ http.onload = function () {
         let output = "";
         for (let item of hool) {
             output += `
-            <div class="box" onclick = "window.location.href = 'index2.html';" >
+            <article onclick = "window.location.href = 'index2.html';" >
             <img src="${item.image}" alt= "${item.image}"
             />
             <div class="box_description">
@@ -19,7 +19,7 @@ http.onload = function () {
               <h4 class="foodViews">Үзэлт: ${item.views}</h4>
               <h4 class="foodReview"> Үнэлгээ: ${item.review}</h4>
             </div>
-          </div >    
+          </article>    
     `;
         }
         document.querySelector(".my-recipes").innerHTML = output;

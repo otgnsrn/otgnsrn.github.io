@@ -7,6 +7,7 @@
     --form-input-border: 1px solid var(--gray);
     --button-border: 3px solid var(--mid_green);
     --button-border1: 2px solid var(--mid_green);
+    --transition: all 0.25s ease 0s;
     --cover-h2-size: 2rem;
     --main-h2-size: 1.5rem;
     --img-border-radius: 5px;
@@ -259,6 +260,11 @@ main h2{
     height: auto;
     margin-right: var(--main-h2-size);
     border-radius: var(--img-border-radius);
+}
+
+.main_box:hover{
+    transform: scale(1.1);
+  transition: var(--transition);
 }
 
 .main_recommend{
