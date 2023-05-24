@@ -58,16 +58,12 @@ header nav{
     align-self: center;
 }
 
-header .logo{
+header h1{
+    margin: var(--margin_0);
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: var(--rem_12);
-    
-}
-
-header .logo h1{
-    margin: var(--margin_0);
+    font-size: 1.8rem;
 }
 
 header a{
