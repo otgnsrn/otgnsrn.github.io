@@ -243,3 +243,27 @@ footer a{
 footer ul{
     list-style-type: none;
 }
+
+@media only screen and (max-width: 1024px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+    }
+    main img{
+        display: none;
+    }
+    main div.formm{
+        inset-block: none;
+        padding: var(--padding1);
+        margin: var(--margin_3);
+        grid-area: main;
+        background-color: white;
+        border-radius: var(--border_radius12);
+        box-shadow: var(--background-blur);
+    }
+    
+}
