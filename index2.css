@@ -107,14 +107,11 @@ header .nav1{
 }
 
 header .nav1 .logo{
+  margin: var(--margin_0);
   align-self: center;
   color: var(--green);
   font-family: Shrikhand;
-  font-size: var(--rem_1);;
-}
-
-header .logo h1{
-  margin: var(--margin_0);
+  font-size: 1.8rem;
 }
 
 header .nav1 ul{

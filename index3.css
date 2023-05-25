@@ -96,11 +96,7 @@ header .nav1 .logo{
     align-self: center;
     color: var(--green);
     font-family: Shrikhand;
-    font-size: var(--rem_1);;
-}
-
-header .logo h1{
-    margin: var(--margin_0);
+    font-size: 1.8rem;
 }
 
 header .nav1 ul{
@@ -140,11 +136,9 @@ ul{
     padding: var(--margin_0);
 }
 .search{
-    
     background: var(--green);
     height: 2.2rem;
     border-radius: 40px;
-
 }
 
 .search:hover > .search-txt{
@@ -153,8 +147,6 @@ ul{
 
 .search:hover > .search-btn{
     background: white;
-
-    
 }
 
 .search-btn{
@@ -205,7 +197,6 @@ input::placeholder{
     align-self: center;
     text-align: center;
     font-family: Inter;
-    
 }
 
 .main_cover_details h2{
