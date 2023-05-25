@@ -44,42 +44,42 @@ window.onload = () => {
     console.log("window.onload");
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const type = urlParams.get("type");
-    console.log(type);
-    if (type == "cake") {
+    const category = urlParams.get("category");
+    console.log(category);
+    if (category == "#Олон орны хоол") {
         get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
             if (data) {
-                App(data?.record?.[type], "my_recipe");
+                App(data?.[category], "my_recipe");
             }
         });
-    } else if (type == "bakery") {
+    } else if (category == "#Breakfast") {
         get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
             if (data) {
-                App(data?.record?.[type], "my_recipe");
+                App(data?.[category], "my_recipe");
             }
         });
-    } else if (type == "drinks") {
+    } else if (category == "#Dinner") {
         get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
             if (data) {
-                App(data?.record?.[type], "my_recipe");
+                App(data?.[category], "my_recipe");
             }
         });
-    } else if (type == "bread") {
+    } else if (category == "#Dinner") {
         get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
             if (data) {
-                App(data?.record?.[type], "my_recipe");
+                App(data?.[category], "my_recipe");
             }
         });
-    } else if (type == "catering") {
+    } else if (category == "#Breakfast") {
         get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
             if (data) {
-                App(data?.record?.[type], "my_recipe");
+                App(data?.[category], "my_recipe");
             }
         });
-    } else if (type == "desert") {
+    } else if (category == "#Олон орны хоол") {
         get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
             if (data) {
-                App(data?.record?.[type], "my_recipe");
+                App(data?.[category], "my_recipe");
             }
         });
     } else {
