@@ -64,24 +64,6 @@ window.onload = () => {
                 App(data?.[category], "my_recipe");
             }
         });
-    } else if (category == "#Dinner") {
-        get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
-            if (data) {
-                App(data?.[category], "my_recipe");
-            }
-        });
-    } else if (category == "#Breakfast") {
-        get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
-            if (data) {
-                App(data?.[category], "my_recipe");
-            }
-        });
-    } else if (category == "#Олон орны хоол") {
-        get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
-            if (data) {
-                App(data?.[category], "my_recipe");
-            }
-        });
     } else {
         App(Data, "my_recipe");
     }
