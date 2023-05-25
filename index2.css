@@ -372,16 +372,17 @@ ul{
   }
   .recipe_requiment{
     grid-area: recommend;
-    padding-left: var(--per_10);
-    font-family: Inter;
-    align-self: stretch;
-    padding-right: var(--rem_6);
-    
+    display: flex;
+    flex-direction: row;
+    font-family: Inter;    
+  }
+
+  .recipe_requiment :first-child{
+    display: none;
   }
   .recipe_requiment img{
-    width: var(--per_40);
+    width: var(--per_20);
     height: auto;
-    padding: var(--padding6);
   }
   .instruction_set{
     grid-area: main;

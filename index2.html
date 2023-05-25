@@ -14,6 +14,19 @@
       src="https://kit.fontawesome.com/f9aab808e8.js"
       crossorigin="anonymous"
     ></script>
+    <script language="javascript">
+      function changeImage(){
+          if (document.getElementById("imgClickAndChange").src == "img1/red.png") 
+          {
+              document.getElementById("imgClickAndChange").src = "img1/white.png";
+      
+          }
+          else if (document.getElementById("imgClickAndChange").src == "img1/white.png")
+          {
+              document.getElementById("imgClickAndChange").src = "img1/red.png"
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -71,7 +84,7 @@
       </div>
     </article>
     <div class="editor">
-      <img src="img1/profile1.webp" alt="profile" width="40px" height="50px" />
+      <img src="img1/profile1.webp" alt="profile" width="40px" height="40px" />
       <h4>Анхныбилэг</h4>
     </div>
 
@@ -150,15 +163,3 @@
     </footer>
   </body>
 </html>
-<script language="javascript">
-  function changeImage(){
-      if (document.getElementById("imgClickAndChange").src == "img1/red.png") 
-      {
-          document.getElementById("imgClickAndChange").src = "img1/white.png";
-  
-      }
-      else if (document.getElementById("imgClickAndChange").src == "img1/white.png")
-      {
-          document.getElementById("imgClickAndChange").src = "img1/red.png"
-    }
-  }
