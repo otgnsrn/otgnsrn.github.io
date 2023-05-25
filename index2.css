@@ -11,7 +11,8 @@
     --font_size13: 1.3rem;
     --margin_0: 0;
     --margin_1: 1rem 0 0 8.5rem;
-    --margin_2: 0 6rem 0 4rem;
+    --margin_2: 0 3rem 0 3rem;
+    --margin_3: 0 1rem 0 4rem;
     --padding: 0  3rem 0 3rem;
     --padding2: 5rem 0 1rem 0;
     --padding3: 0 4rem 0 4rem;
@@ -37,9 +38,10 @@
     --per_35: 35%;
     --per_10: 10%;
     --per_80: 80%;
-    --per_70: 70%;
+    --per_70: 90%;
     --footer_ul_padding: 1rem 15rem 1rem 15rem;
     --footer_a_fontsize: 0.8rem;
+    --margin_header: 0 3rem 0 3rem;
 
 }
 @font-face {
@@ -59,7 +61,6 @@
   src: url(./fonts/Inter-Regular.ttf);
   font-display: swap;
 }
-
 body{
   display: grid;
   height: var(--grid_height);
@@ -77,117 +78,120 @@ body{
 }
 
 header{
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: var(--margin_header)
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: var(--margin_header)
 }
 
 header a{
-    text-decoration: none;
-    color: var(--dark-green);
-    font-family: Philosopher;
-    font-weight: bold;
-    font-size: var(--header_a_fontsize);
+  text-decoration: none;
+  color: var(--dark-green);
+  font-family: Philosopher;
+  font-weight: bold;
+  font-size: var(--header_a_fontsize);
+}
+#menu-icon{
+  display: none;
 }
 header .nav1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 header .nav1 .logo{
-    align-self: center;
-    color: var(--green);
-    font-family: Shrikhand;
-    font-size: var(--rem_1);;
+  align-self: center;
+  color: var(--green);
+  font-family: Shrikhand;
+  font-size: var(--rem_1);;
 }
 
 header .logo h1{
-    margin: var(--margin_0);
+  margin: var(--margin_0);
 }
 
 header .nav1 ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 header .nav1 ul li{
-    margin-left: var(--rem_2);
+  margin-left: var(--rem_2);
 }
 
 header .nav2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
 }
 
 header .nav2 ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 header .nav2 ul li{
-    margin-right: var(--main-h2-size);
+  margin-right: var(--main-h2-size);
 }
 
 header a:hover{
-    color: var(--green);
+  color: var(--green);
 }
 
 ul{
-    list-style-type: none;
-    margin: var(--margin_0);
-    padding: var(--margin_0);
+  list-style-type: none;
+  margin: var(--margin_0);
+  padding: var(--margin_0);
 }
 .search{
-    
-    background: var(--green);
-    height: 2.2rem;
-    border-radius: 40px;
+  
+  background: var(--green);
+  height: 2.2rem;
+  border-radius: 40px;
 
 }
 
 .search:hover > .search-txt{
-    width: 240px;
+  width: 240px;
 }
 
 .search:hover > .search-btn{
-    background: white;
+  background: white;
 
-    
+  
 }
 
 .search-btn{
-    color: var(--dark-green);
-    border: var(--button-border1);
-    float: right;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
+  color: var(--dark-green);
+  border: var(--button-border1);
+  float: right;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
 }
 
 .search-txt{
-    border:none;
-    background: none;
-    outline: none;
-    float:left;
-    padding: 0;
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    transition: 0.2s;
-    line-height:40px;
-    width: 0;
+  border:none;
+  background: none;
+  outline: none;
+  float:left;
+  padding: 0;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  transition: 0.2s;
+  line-height:40px;
+  width: 0;
 }
 input::placeholder{
     color: white;
@@ -241,12 +245,12 @@ input::placeholder{
   width: var(--rem_5);
 }
 .icons{
-  text-align: right;
-
   margin-bottom: var(--rem_1);
+  display: flex;
   flex-direction: row;
+  height: 4rem;
+  width: 4rem;
 }
-
 .editor{
   grid-area: editor;
   display: flex;
@@ -257,23 +261,22 @@ input::placeholder{
 .editor img{
   padding-top: var(--rem_12);
 }
-.ingridents h3{
+aside{
+  margin: 0 0 0 5rem;
+}
+aside h3{
   font-family: Inter;
   align-self: stretch;
-  padding: var(--padding4);
 }
-.ingridents ul{
+.ingridents{
   grid-area: ingridents;
-  margin: var(--margin_1);
+  
   padding: var(--padding5);
   font-family: Inter;
   background-color: white;
   border-radius: var(--border_radius12);
   box-shadow: var(--background-blur);
   
-}
-.ingridents ul li{
-  margin-left: var(--rem_2);
 }
 
 main{
@@ -303,9 +306,6 @@ main{
   height: auto;
   border-radius: var(--border_radius12);
 }
-.instruction{
-
-}
 
 .instruction p{
   font-family: Inter;
@@ -313,7 +313,7 @@ main{
   border-radius: var(--border_radius12);
   box-shadow: var(--background-blur);
   padding: var(--rem_1);
-  margin-bottom: var(--rem_3);
+  margin: var(--margin_3);
 }
 footer{
     grid-area: footer;
@@ -347,12 +347,17 @@ ul{
       grid-template-areas: 
           "header"
           "food_recipe_main"
-          "editor"
           "food_recipe_details"
+          "editor"
           "ingridents"
           "main"
           "recommend"
           "footer";
+  }
+  .food_recipe_main{
+    margin: 0 3rem 0 3rem;
+    display: flex;
+    flex-direction: row;
   }
   .recipe_requiment{
     grid-area: recommend;
@@ -373,4 +378,31 @@ ul{
     font-family: Inter;
     align-self: stretch;
   } 
+  aside{
+    margin: 0 3rem 0 4rem;
+  }
+  header{
+    margin: 2rem 0 2rem 0;
+  }
+  .logo{
+    align-items: center;
+    margin: 0 2rem 0 2rem;
+  }
+  #menu-icon{
+    display: initial;
+    margin: 0 3rem 0 4rem;
+  }
+  header nav ul .navbar{
+    display: none;
+  }
+  header .nav2 ul li{
+    display: none;
+  }
+  header .nav2 img{
+    margin: 0 3rem 0 0 ;
+  }
+  .search-btn{
+    align-items: self-end;
+    text-align: right;
+  }
 }
