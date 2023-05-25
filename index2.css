@@ -13,13 +13,18 @@
     --margin_1: 1rem 0 0 8.5rem;
     --margin_2: 0 3rem 0 3rem;
     --margin_3: 0 1rem 0 4rem;
+    --margin_4: 0 3rem 0 4rem;
+    --margin_5: 2rem 0 2rem 0;
+    --margin_6: 0 2rem 0 2rem;
+    --margin_7: 0 0 0 5rem;
     --padding: 0  3rem 0 3rem;
     --padding2: 5rem 0 1rem 0;
     --padding3: 0 4rem 0 4rem;
     --padding4: 1rem 1rem 1rem 5.5rem;
     --padding5: 1rem 1rem 1rem 1.5rem;
-    --padding6: 1rem 1rem 1rem 4rem;
+    --padding6: 0.5rem 1rem 0 4rem;
     --padding7: 0 3rem 0 6rem;
+    --padding8: 0 3rem 0 0;
     --header_a_fontsize: 1.313rem;
     --rem_30: 30rem;
     --rem_0375: 0.375rem;
@@ -262,7 +267,8 @@ input::placeholder{
   padding-top: var(--rem_12);
 }
 aside{
-  margin: 0 0 0 5rem;
+  margin: var(--margin_7);
+  line-height: 1.8;
 }
 aside h3{
   font-family: Inter;
@@ -276,7 +282,7 @@ aside h3{
   background-color: white;
   border-radius: var(--border_radius12);
   box-shadow: var(--background-blur);
-  
+  font-size: 15px;
 }
 
 main{
@@ -299,6 +305,9 @@ main{
   width: var(--per_80);
   height: auto;
 }
+.recipe_requiment h3{
+  margin: var(--margin_2);;
+}
 .instruction img{
   margin: var(--margin_2);
   padding: var(--rem_1); 
@@ -306,7 +315,9 @@ main{
   height: auto;
   border-radius: var(--border_radius12);
 }
-
+.instruction h3{
+  margin: var(--margin_3);
+}
 .instruction p{
   font-family: Inter;
   background-color: white;
@@ -355,7 +366,7 @@ ul{
           "footer";
   }
   .food_recipe_main{
-    margin: 0 3rem 0 3rem;
+    margin: var(--margin_2);
     display: flex;
     flex-direction: row;
   }
@@ -374,23 +385,24 @@ ul{
   }
   .instruction_set{
     grid-area: main;
-    padding: var(--padding7);
     font-family: Inter;
     align-self: stretch;
+    margin: var(--padding8);
+    padding: 0;
   } 
   aside{
-    margin: 0 3rem 0 4rem;
+    margin: var(--margin_4);
   }
   header{
-    margin: 2rem 0 2rem 0;
+    margin: var(--margin_5);
   }
   .logo{
     align-items: center;
-    margin: 0 2rem 0 2rem;
+    margin: var(--margin_6) ;
   }
   #menu-icon{
     display: initial;
-    margin: 0 3rem 0 4rem;
+    margin: var(--margin_4);
   }
   header nav ul .navbar{
     display: none;
@@ -399,7 +411,7 @@ ul{
     display: none;
   }
   header .nav2 img{
-    margin: 0 3rem 0 0 ;
+    margin: var(--padding8) ;
   }
   .search-btn{
     align-items: self-end;

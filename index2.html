@@ -57,8 +57,7 @@
       ></iframe>
       <div class="container">
         <h1>Homemade steak pizza</h1>
-        <img alt="" src="img1/red.png" 
-        style="height: 85px; width: 198px" id="imgClickAndChange" onclick="changeImage()"   />
+        <img alt="" src="img1/red.png" style="height: 3rem; width: 3rem" id="imgClickAndChange" onclick="changeImage()"/>
         <p>
           It has survived not only five centuries, but also the leap into
           electronic typesetting, remaining essentially unchanged. It was
@@ -113,7 +112,7 @@
 
     <main class="instruction_set">
       <article class="instruction">
-        <h3>Хоол хийх заавар</h3>
+        <h3>Хийх заавар</h3>
         <img src="img1/pic9.webp" alt="amttai hoolnii zurag" />
         <p>
           Place the warm water in the large bowl of a heavy duty stand mixer.
@@ -157,14 +156,13 @@
 </html>
 <script language="javascript">
   function changeImage(){
-      if (document.getElementById("imgClickAndChange").src == "img1/white.png") 
+      if (document.getElementById("imgClickAndChange").src == "img1/red.png") 
       {
-          document.getElementById("imgClickAndChange").src = "assets/white.png";
+          document.getElementById("imgClickAndChange").src = "img1/white.png";
   
       }
-      else if (document.getElementById("imgClickAndChange").src == "assets/white.png")
+      else if (document.getElementById("imgClickAndChange").src == "img1/white.png")
       {
-          document.getElementById("imgClickAndChange").src = "assets/red.png";
-  
-      
+          document.getElementById("imgClickAndChange").src = "img1/red.png"
     }
+  }
