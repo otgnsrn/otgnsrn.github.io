@@ -16,9 +16,12 @@ http.onload = function () {
               <p class="foodDescription">${item.description}
               </p>
               <h4 class="foodCat">${item.category}</h4>
-              <h4 class="foodViews">Үзэлт: ${item.views}</h4>
-              <h4 class="foodReview"> Үнэлгээ: ${item.review}</h4>
-            </div>
+              <div class= "re_views">
+              <h4 class="foodViews">${item.views}</h4> 
+              <span class="material-symbols-outlined">visibility</span></div>
+              <div class="re_views">
+              <h4 class="foodReview"> ${item.review}</h4>
+              <span class="material-symbols-outlined"> star</span></div>
           </article>    
     `;
         }
@@ -27,19 +30,3 @@ http.onload = function () {
 }
 
 const template = document.createElement('template');
-
-template.innerHTML = ``
-class myRecipe extends HTMLElement {
-    constructor() {
-        super();
-
-        this.attachShadow({ mode: 'open' });
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
-
-    }
-}
-
-window.customElements.define(
-    'my-recipe', myRecipe
-);
-
