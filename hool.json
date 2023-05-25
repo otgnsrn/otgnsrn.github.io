@@ -8,38 +8,6 @@
         "review": "10/10"
     },
     {
-        "name": "Ganjang Gejang",
-        "description": "Амталсан хавчны мах",
-        "category": "#Олон орны хоол",
-        "image": "./img1/img8.webp",
-        "views":"2854",
-        "review": "9.4/10"
-    },
-    {
-        "name": "Алимны пирог",
-        "description": "Ванилны зайрмагтай, алимны пирог",
-        "category": "#Baking",
-        "image": "./img1/15.JPG",
-        "views":"3853",
-        "review": "9/10"
-    },
-    {
-        "name": "Банштай шөл",
-        "description": "Солонгосчуудын цагаан сарын хоол",
-        "category": "#Олон орны хоол",
-        "image": "./img1/img6.webp",
-        "views":"1046",
-        "review": "9/10"
-    },
-    {
-        "name": "Бананатай талх",
-        "description": "Бананатай амтат халуун талх",
-        "category": "#Baking",
-        "image": "./img1/img5.webp",
-        "views":"5836",
-        "review": "9.5/10"
-    },
-    {
         "name": "Bruschettea",
         "description": "Өглөөний хоолонд хийж идэхэд тохиромжтой",
         "category": "#Breakfast",
@@ -62,29 +30,5 @@
         "image": "./img1/img1.webp",
         "views":"1945",
         "review": "9.2/10"
-    },
-    {
-        "name": "Oyster and seaweed Muchim",
-        "description": "Oyster and seaweed Muchim with buckwheat noodle",
-        "category": "#Олон орны хоол",
-        "image": "./img1/img5.webp",
-        "views":"9573",
-        "review": "9.4/10"
-    },
-    {
-        "name": "Pumpkin bread",
-        "description": "Намрын улиралд тохиромжтой, хулууны талх",
-        "category": "#Baking",
-        "image": "./img1/img9.webp",
-        "views":"5839",
-        "review": "8/10"
-    },
-    {
-        "name": "Chipotle Burrito Bowl",
-        "description": "Home made prime ribs pizza",
-        "category": "#Lunch",
-        "image": "./img1/img1.webp",
-        "views":"1583",
-        "review": "9.1/10"
     }
 ]

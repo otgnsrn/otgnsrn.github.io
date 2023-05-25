@@ -216,7 +216,7 @@ main h2{
     font-size: var(--rem_15);
 }
 
-.box{
+article {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -237,6 +237,10 @@ main h2{
 .box_description h3{
     font-size: var(--rem_15);
     font-weight: bold;
+}
+
+.button_add{
+    display: none;
 }
 
 .button_seemore{
@@ -320,5 +324,32 @@ ul{
             "main"
             "aside"
             "footer";
+    }
+
+    .button_add{
+        display: inline;
+        width: 97%;
+        height: var(--rem_4);
+        border-color: var(--gray);
+        border-style: solid;
+        border-radius: var(--border_radius35);
+        background-color: white;
+        color: var(--dark-green);
+        font-family: "Philosopher";
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    header .nav2 a{
+        display: none;
+    }
+
+    main{
+        margin: 2rem;
+    }
+
+    aside{
+        margin: 2rem;
     }
 }
