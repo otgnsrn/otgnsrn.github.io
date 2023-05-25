@@ -37,7 +37,7 @@ function App(data, targetElement) {
         retVal += articleObj.render();
     }
 
-    document.getElementById(targetElement).insertAdjacentHTML("my_recipe", retVal);
+    document.getElementById(targetElement).insertAdjacentHTML(".my_recipe", retVal);
 }
 
 window.onload = () => {
@@ -49,22 +49,22 @@ window.onload = () => {
     if (category == "#Олон орны хоол") {
         get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
             if (data) {
-                App(data?.[category], "my_recipe");
+                App(data?.[category], ".my_recipe");
             }
         });
     } else if (category == "#Breakfast") {
         get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
             if (data) {
-                App(data?.[category], "my_recipe");
+                App(data?.[category], ".my_recipe");
             }
         });
     } else if (category == "#Dinner") {
         get("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6").then((data) => {
             if (data) {
-                App(data?.[category], "my_recipe");
+                App(data?.[category], ".my_recipe");
             }
         });
     } else {
-        App(Data, "my_recipe");
+        App(Data, ".my_recipe");
     }
 };
