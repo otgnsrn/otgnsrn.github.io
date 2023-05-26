@@ -1,10 +1,10 @@
 //fetch get
 const get = async (url) => {
-    const response = await fetch(url);
+    const response = await fetch("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6");
     return await response.json();
 };
 const post = async (url, data) => {
-    const response = await fetch(url, {
+    const response = await fetch("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -14,7 +14,7 @@ const post = async (url, data) => {
     return await response.json();
 };
 const put = async (url, data) => {
-    const response = await fetch(url, {
+    const response = await fetch("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6", {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -24,7 +24,7 @@ const put = async (url, data) => {
     return await response.json();
 };
 const del = async (url) => {
-    const response = await fetch(url, {
+    const response = await fetch("https://api.jsonbin.io/v3/b/646f0e7c8e4aa6225ea3c6a6", {
         method: "DELETE",
     });
     return await response.json();
