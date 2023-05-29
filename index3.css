@@ -206,7 +206,7 @@ custom-button{
     margin-left: 48rem;
 }
 
-main{
+custom-main{
     grid-area: main;
     display: grid;
     justify-items: center;
@@ -214,16 +214,16 @@ main{
     font-family: Inter;
 }
 
-main best-recipe{
+custom-main best-recipe{
     margin-right: var(--rem_50);
     font-size: var(--main-h2-size);
     font-family: Inter;
 }
 
-main h2{
+custom-main h2{
     margin-right: var(--rem_50);
-    font-size: var(--main-h2-size);
-    font-family: Inter;
+    font-size: 1.8rem;
+    font-family: Philosopher;
 }
 
 article-container {
@@ -329,21 +329,21 @@ single-article:hover{
     border-radius: var(--img-border-radius);
 }
 
-footer{
+custom-footer{
     grid-area: footer;
     margin-top: var(--rem_5);
     background-color: var(--mid_green);
     font-family: Philosopher;
 }
 
-footer ul{
+custom-footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: var(--footer_ul_padding);
 }
 
-footer a{
+custom-footer a{
     font-size: var(--footer_a_fontsize);
     text-decoration: none;
     color: white;
