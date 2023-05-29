@@ -15,7 +15,7 @@ class ArticlesContainer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <single-article
-        image="web/img1.webp"
+        image="./img1/web/img1.webp"
         title="Salmon bowl"
       ></single-article>
       <single-article
@@ -31,7 +31,7 @@ class ArticlesContainer extends HTMLElement {
         title="Bruschettea"
       ></single-article>
       <single-article
-        image="web/img5.webp"
+        image="./img1/web/img5.webp"
         title="Cold noodle"
       ></single-article>
     `;
@@ -86,7 +86,7 @@ class MainCover extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <img
-        src="web/background1.webp"
+        src="./img1/web/background1.webp"
         alt="background zurag"
         width="100%"
         height="auto"
@@ -163,7 +163,7 @@ class Main extends HTMLElement {
       <heading-2 title="Зөвлөгөө"></heading-2>
       <section class="main_advice">
         <div class="main_advice_box">
-          <img src="web/Rectangle 359.png" alt="chocolatenii zurag" />
+          <img src="./img1/web/Rectangle 359.png" alt="chocolatenii zurag" />
           <article class="main_advice_details">
             <h3>How to temper chocolate</h3>
             <p>
@@ -177,7 +177,7 @@ class Main extends HTMLElement {
           </article>
         </div>
         <div class="main_advice_box">
-          <img src="web/burrito.webp" alt="burritonii zurag" />
+          <img src="./img1/web/burrito.webp" alt="burritonii zurag" />
           <article class="main_advice_details">
             <h3>How to fold a burrito</h3>
             <p>
@@ -194,61 +194,61 @@ class Main extends HTMLElement {
       <heading-2 title="Сүүлд нэмэгдсэн"></heading-2>
       <section class="main_latest">
         <img
-          src="web/img1.webp"
+          src="./img1/web/img1.webp"
           alt="hoolnii zurag"
           width="15%"
           height="auto"
         />
         <img
-          src="web/img2.webp"
+          src="./img1/web/img2.webp"
           alt="hoolnii zurag"
           width="15%"
           height="auto"
         />
         <img
-          src="web/img5.webp"
+          src="./img1/web/img5.webp"
           alt="hoolnii zurag"
           width="15%"
           height="auto"
         />
         <img
-          src="web/img6.webp"
+          src="./img1/web/img6.webp"
           alt="hoolnii zurag"
           width="15%"
           height="auto"
         />
         <img
-          src="web/img6.webp"
+          src="./img1/web/img6.webp"
           alt="hoolnii zurag"
           width="15%"
           height="auto"
         />
         <img
-          src="web/img5.webp"
+          src="./img1/web/img5.webp"
           alt="hoolnii zurag"
           width="15%"
           height="auto"
         />
         <img
-          src="web/img4.webp"
+          src="./img1/web/img4.webp"
           alt="hoolnii zurag"
           width="15%"
           height="auto"
         />
         <img
-          src="web/img3.webp"
+          src="./img1/web/img3.webp"
           alt="hoolnii zurag"
           width="15%"
           height="auto"
         />
         <img
-          src="web/img2.webp"
+          src="./img1/web/img2.webp"
           alt="hoolnii zurag"
           width="15%"
           height="auto"
         />
         <img
-          src="web/img1.webp"
+          src="./img1/web/img1.webp"
           alt="hoolnii zurag"
           width="15%"
           height="auto"

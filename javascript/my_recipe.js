@@ -1,5 +1,5 @@
 let http = new XMLHttpRequest();
-http.open('get', 'hool.json', true);
+http.open('get', './javascript/hool.json', true);
 http.send();
 
 http.onload = function () {
