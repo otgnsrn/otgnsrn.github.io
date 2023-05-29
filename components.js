@@ -4,7 +4,6 @@ class SingleArticle extends HTMLElement {
       <article>
         <img src="${this.getAttribute('image')}" alt="Hoolnii zurag" />
         <h3>${this.getAttribute('title')}</h3>
-        <p>${this.getAttribute('category')}</p>
       </article>
     `;
   }
@@ -17,28 +16,23 @@ class ArticlesContainer extends HTMLElement {
     this.innerHTML = `
       <single-article
         image="web/img1.webp"
-        title="Хоолны нэр"
-        category="Ангилал"
+        title="Salmon bowl"
       ></single-article>
       <single-article
-        image="web/img2.webp"
-        title="Хоолны нэр"
-        category="Ангилал"
+        image="./img1/img9.webp"
+        title="Homemade pizza"
       ></single-article>
       <single-article
         image="web/img3.webp"
-        title="Хоолны нэр"
-        category="Ангилал"
+        title="Malatang"
       ></single-article>
       <single-article
-        image="web/img4.webp"
-        title="Хоолны нэр"
-        category="Ангилал"
+        image="./img1/img6.webp"
+        title="Bruschettea"
       ></single-article>
       <single-article
         image="web/img5.webp"
-        title="Хоолны нэр"
-        category="Ангилал"
+        title="Cold noodle"
       ></single-article>
     `;
   }
