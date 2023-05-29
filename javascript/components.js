@@ -23,7 +23,7 @@ class ArticlesContainer extends HTMLElement {
         title="Homemade pizza"
       ></single-article>
       <single-article
-        image="web/img3.webp"
+        image="./img1/web/img3.webp"
         title="Malatang"
       ></single-article>
       <single-article
@@ -134,7 +134,7 @@ class Main extends HTMLElement {
       <custom-button></custom-button>
       <heading-2 title="Санал болгох"></heading-2>
       <section class="main_recommend">
-        <img id="hoolniiZurag" src="web/img6.webp" alt="hoolni zurag" />
+        <img id="hoolniiZurag" src="./img1/web/img6.webp" alt="hoolni zurag" />
         <div class="main_recommend_details">
           <h3>Apple pie with icecream</h3>
           <p>
@@ -143,7 +143,7 @@ class Main extends HTMLElement {
           </p>
           <p id="category">#bakery</p>
           <div class="editor">
-            <img id="profile" src="web/profile4.webp" alt="profile picture" />
+            <img id="profile" src="./img1/web/profile4.webp" alt="profile picture" />
             <p>Нийтлэгчийн нэр</p>
           </div>
         </div>
