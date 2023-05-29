@@ -11,78 +11,15 @@
       src="https://kit.fontawesome.com/f9aab808e8.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="best-recipe.js"></script>
+    <script defer src="components.js"></script>
   </head>
   <body>
-    <header>
-      <nav class="nav1">
-        <h1 class="logo">HoolHiiy</h1>
-        <ul>
-          <li><a href="index2.html">Ангилал</a></li>
-          <li><a href="index3.html">Зөвлөгөө</a></li>
-          <li class="search">
-            <input class="search-txt" type="text" placeholder="  Хайх" />
-            <a class="search-btn" href="#" aria-label="search_btn">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="nav2">
-        <a href="jor_nemeh.html">Нэвтрэх</a>
-      </div>
-    </header>
-
-    <section class="main_cover">
-      <img
-        src="web/background1.webp"
-        alt="background zurag"
-        width="100%"
-        height="auto"
-      />
-      <div class="main_cover_details">
-        <h1>Lorem ipsum</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
-        </p>
-        <button type="button">Цааш үзэх</button>
-      </div>
-    </section>
+    <custom-header></custom-header>
+    <main-cover></main-cover>
     <main>
-      <best-recipe name="Шилдэг жорууд"></best-recipe>
-
-      <section class="main_best">
-        <div class="main_boxes">
-          <article class="main_box">
-            <img src="web/img1.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-            <p>Ангилал</p>
-          </article>
-          <article class="main_box">
-            <img src="web/img2.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-            <p>Ангилал</p>
-          </article>
-          <article class="main_box">
-            <img src="web/img3.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-            <p>Ангилал</p>
-          </article>
-          <article class="main_box">
-            <img src="web/img4.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-            <p>Ангилал</p>
-          </article>
-          <article class="main_box">
-            <img src="web/img5.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-            <p>Ангилал</p>
-          </article>
-        </div>
-        <button type="button" class="button_1">Цааш үзэх</button>
-      </section>
+      <h2>Шилдэг жорууд</h2>
+      <article-container></article-container>
+      <custom-button></custom-button>
       <h2>Санал болгох</h2>
       <section class="main_recommend">
         <img id="hoolniiZurag" src="web/img6.webp" alt="hoolni zurag" />
@@ -100,109 +37,17 @@
         </div>
       </section>
       <h2>Олон орны хоол</h2>
-      <section class="main_best">
-        <div class="main_boxes">
-          <article class="main_box">
-            <img src="web/img7.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img9.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-        </div>
-        <button type="button" class="button_1">Цааш үзэх</button>
-      </section>
+      <article-container></article-container>
+      <custom-button></custom-button>
       <h2>Хүүхдийн хоол</h2>
-      <section class="main_best">
-        <div class="main_boxes">
-          <article class="main_box">
-            <img src="web/img7.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img9.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-        </div>
-        <button type="button" class="button_1">Цааш үзэх</button>
-      </section>
+      <article-container></article-container>
+      <custom-button></custom-button>
       <h2>Түргэн хоол</h2>
-      <section class="main_best">
-        <div class="main_boxes">
-          <article class="main_box">
-            <img src="web/img7.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img9.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-        </div>
-        <button type="button" class="button_1">Цааш үзэх</button>
-      </section>
+      <article-container></article-container>
+      <custom-button></custom-button>
       <h2>Веган хоол</h2>
-      <section class="main_best">
-        <div class="main_boxes">
-          <article class="main_box">
-            <img src="web/img7.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img9.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-          <article class="main_box">
-            <img src="web/img8.webp" alt="Hoolnii zurag" />
-            <h3>Хоолны нэр</h3>
-          </article>
-        </div>
-        <button type="button" class="button_1">Цааш үзэх</button>
-      </section>
+      <article-container></article-container>
+      <custom-button></custom-button>
       <h2>Зөвлөгөө</h2>
       <section class="main_advice">
         <div class="main_advice_box">
@@ -245,18 +90,6 @@
         />
         <img
           src="web/img2.webp"
-          alt="hoolnii zurag"
-          width="15%"
-          height="auto"
-        />
-        <img
-          src="web/img3.webp"
-          alt="hoolnii zurag"
-          width="15%"
-          height="auto"
-        />
-        <img
-          src="web/img4.webp"
           alt="hoolnii zurag"
           width="15%"
           height="auto"
