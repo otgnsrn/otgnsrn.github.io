@@ -64,7 +64,7 @@ body{
     margin: var(--margin_0);
 }
 
-header{
+custom-header{
     grid-area: header;
     display: flex;
     flex-direction: row;
@@ -72,69 +72,52 @@ header{
     margin: var(--margin_header);
 }
 
-header a{
+custom-header a{
     text-decoration: none;
     color: var(--dark-green);
     font-family: Philosopher;
     font-weight: bold;
     font-size: var(--header_a_fontsize);
-}
-header .nav1{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-header .nav1 .logo{
-    align-self: center;
-    color: var(--green);
-    font-family: Shrikhand;
-    font-size: var(--rem_12);
-}
-
-header .logo h1{
-    margin: var(--margin_0);
-}
-
-header .nav1 ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-header .nav1 ul li{
-    margin-left: var(--rem_2);
-}
-
-
-header .nav2{
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: end;
 }
-
-header .nav2 ul{
+custom-header nav{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-header .nav2 ul li{
-    margin-right: var(--rem_15);
+custom-header nav h1{
+    align-self: center;
+    color: var(--green);
+    font-family: Shrikhand;
+    font-size: 1.8rem;
 }
 
+custom-header nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-header a:hover{
+custom-header nav ul li{
+    margin-left: var(--rem_2);
+}
+
+custom-header a:hover{
     color: var(--green);
 }
 
+ul{
+    list-style-type: none;
+    margin: var(--margin_0);
+    padding: var(--margin_0);
+}
 .search{
-    
     background: var(--green);
     height: 2.2rem;
     border-radius: 40px;
-
 }
 
 .search:hover > .search-txt{
@@ -143,8 +126,6 @@ header a:hover{
 
 .search:hover > .search-btn{
     background: white;
-
-    
 }
 
 .search-btn{

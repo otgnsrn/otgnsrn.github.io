@@ -58,10 +58,10 @@ class CustomHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <nav>
-      <h1>HoolHiiy</h1>
+      <h1 onclick="window.location.href = 'index3.html';">HoolHiiy</h1>
       <ul>
         <li><a href="index2.html">Ангилал</a></li>
-        <li><a href="index3.html">Зөвлөгөө</a></li>
+        <li><a href="user.html">Зөвлөгөө</a></li>
         <li class="search">
           <input class="search-txt" type="text" placeholder="  Хайх" />
           <a class="search-btn" href="#" aria-label="search_btn">
@@ -70,7 +70,7 @@ class CustomHeader extends HTMLElement {
         </li>
       </ul>
     </nav>
-      <a href="jor_nemeh.html">Нэвтрэх</a>
+      <a href="jor_nemeh.html">Жор нэмэх</a>
     `;
   }
 }
