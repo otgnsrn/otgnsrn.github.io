@@ -1,11 +1,25 @@
 class SingleArticle extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `
+    this.shadow = this.attachShadow({ mode: 'open' });
+    const template = document.createElement('template');
+    template.innerHTML = `
+
+    <style>
+    article img{
+      width: 10rem;
+      height: auto;
+      margin-right: var(--main-h2-size);
+      border-radius: var(--img-border-radius);
+  }
+    </style>
       <article>
         <img src="${this.getAttribute('image')}" alt="Hoolnii zurag" />
-        <h3>${this.getAttribute('title')}</h3>
+        <h3><slot name="title">${this.getAttribute('title')}</slot></h3>
       </article>
     `;
+
+    const instance = template.content.cloneNode(true);
+    this.shadow.appendChild(instance);
   }
 }
 

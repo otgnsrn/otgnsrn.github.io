@@ -231,12 +231,12 @@ article-container {
         flex-direction: row;
       }
 
-article img{
+/* article img{
     width: 10rem;
     height: auto;
     margin-right: var(--main-h2-size);
     border-radius: var(--img-border-radius);
-}
+} */
 
 single-article:hover{
     transform: scale(1.1);
