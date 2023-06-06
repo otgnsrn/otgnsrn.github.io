@@ -82,66 +82,48 @@ body{
   font-size: var(--font_size13);
 }
 
-header{
+custom-header{
   grid-area: header;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: var(--margin_header)
+  margin: var(--margin_header);
 }
 
-header a{
+custom-header a{
   text-decoration: none;
   color: var(--dark-green);
   font-family: Philosopher;
   font-weight: bold;
   font-size: var(--header_a_fontsize);
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
-#menu-icon{
-  display: none;
-}
-header .nav1{
+custom-header nav{
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-header .nav1 .logo{
-  margin: var(--margin_0);
+custom-header nav h1{
   align-self: center;
   color: var(--green);
   font-family: Shrikhand;
   font-size: 1.8rem;
 }
 
-header .nav1 ul{
+custom-header nav ul{
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-header .nav1 ul li{
+custom-header nav ul li{
   margin-left: var(--rem_2);
 }
 
-header .nav2{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-}
-
-header .nav2 ul{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-header .nav2 ul li{
-  margin-right: var(--main-h2-size);
-}
-
-header a:hover{
+custom-header a:hover{
   color: var(--green);
 }
 
@@ -151,11 +133,9 @@ ul{
   padding: var(--margin_0);
 }
 .search{
-  
   background: var(--green);
   height: 2.2rem;
   border-radius: 40px;
-
 }
 
 .search:hover > .search-txt{
@@ -164,8 +144,6 @@ ul{
 
 .search:hover > .search-btn{
   background: white;
-
-  
 }
 
 .search-btn{
@@ -196,17 +174,17 @@ ul{
   width: 0;
 }
 input::placeholder{
-    color: white;
-    font-family: Shrikhand;
-    font-weight: 600;
-    opacity: 0.9;
-    font-size: 17px;
+  color: white;
+  font-family: Shrikhand;
+  font-weight: 600;
+  opacity: 0.9;
+  font-size: 17px;
 }
 
 .food_recipe_main{
   grid-area: food_recipe_main;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   grid-area: food_recipe_main;
   margin-top: var(--rem_3);
   justify-content: center;
@@ -227,7 +205,7 @@ input::placeholder{
   box-shadow: var(--background-blur);
   width: var(--per_35);
   height: auto;
-  margin-left: var(--rem_3);
+  margin-right: var(--rem_3);
 
 } 
 .button{
